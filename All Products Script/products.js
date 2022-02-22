@@ -9,6 +9,8 @@ var prodArr=
         dprice: "",
         star: 4.6,
         review: "(6808)",
+        pearks: false,
+        pvalue: 155
     },
 
     {
@@ -20,6 +22,8 @@ var prodArr=
         dprice: "",
         star: 4.5,
         review: "(2466)",
+        pearks: false,
+        pvalue: 175
     },
 
     {
@@ -31,6 +35,8 @@ var prodArr=
         dprice: "",
         star: 4.6,
         review: "(8348)",
+        pearks: false,
+        pvalue: 70
     },
 
     {
@@ -42,6 +48,8 @@ var prodArr=
         dprice: "($275 Value)",
         star: 4.7,
         review: "(6405)",
+        pearks: true,
+        pvalue: 197
     },
 
     {
@@ -52,7 +60,9 @@ var prodArr=
         price: 195,
         dprice: "($245 Value)",
         star: 3.8,
-        review: "(1365)"
+        review: "(1365)",
+        pearks: true,
+        pvalue: 175
     },
 
     {
@@ -63,7 +73,9 @@ var prodArr=
         price: 190,
         dprice: "($240 Value)",
         star: 4.5,
-        review: "(906)"
+        review: "(906)",
+        pearks: true,
+        pvalue: 171
     },
 
     {
@@ -74,7 +86,9 @@ var prodArr=
         price: 185,
         dprice: "($235 Value)",
         star: 4.2,
-        review: "(519)"
+        review: "(519)",
+        pearks: true,
+        pvalue: 166
     },
 
     {
@@ -85,7 +99,9 @@ var prodArr=
         price: 134,
         dprice: "",
         star: 4.5,
-        review: "(602)"
+        review: "(602)",
+        pearks: true,
+        pvalue: 120
     },
 
     {
@@ -96,7 +112,9 @@ var prodArr=
         price: 89,
         dprice: "",
         star: 4.5,
-        review: "(1415)"
+        review: "(1415)",
+        pearks: true,
+        pvalue: 80
     },
 
     {
@@ -107,7 +125,9 @@ var prodArr=
         price: 112,
         dprice: "",
         star: 4.8,
-        review: "(7660)"
+        review: "(7660)",
+        pearks: false,
+        pvalue: 112
     },
 
     {
@@ -118,7 +138,9 @@ var prodArr=
         price: 72,
         dprice: "",
         star: 4.5,
-        review: "(4906)"
+        review: "(4906)",
+        pearks: false,
+        pvalue: 72
     },
 
     {
@@ -129,7 +151,9 @@ var prodArr=
         price: 66,
         dprice: "",
         star: 4.9,
-        review: "(6346)"
+        review: "(6346)",
+        pearks: false,
+        pvalue: 66
     },
 
     {
@@ -140,7 +164,9 @@ var prodArr=
         price: 83,
         dprice: "",
         star: 4.8,
-        review: "(3755)"
+        review: "(3755)",
+        pearks: false,
+        pvalue: 83
     },
 
     {
@@ -151,7 +177,9 @@ var prodArr=
         price: 112,
         dprice: "",
         star: 4.4,
-        review: "(464)"
+        review: "(464)",
+        pearks: false,
+        pvalue: 112
     },
 
     {
@@ -162,7 +190,9 @@ var prodArr=
         price: 66,
         dprice: "",
         star: 4.7,
-        review: "(422)"
+        review: "(422)",
+        pearks: false,
+        pvalue: 66
     },
 
     {
@@ -173,7 +203,9 @@ var prodArr=
         price: 343,
         dprice: "($430 Value)",
         star: 0,
-        review: ""
+        review: "",
+        pearks: true,
+        pvalue: 307
     },
 
     {
@@ -184,7 +216,9 @@ var prodArr=
         price: 66,
         dprice: "",
         star: 3.2,
-        review: "(2707)"
+        review: "(2707)",
+        pearks: false,
+        pvalue: 66
     },
 
     {
@@ -195,7 +229,9 @@ var prodArr=
         price: 227,
         dprice: "",
         star: 4.8,
-        review: "(810)"
+        review: "(810)",
+        pearks: false,
+        pvalue: 227
     },
 
     {
@@ -206,7 +242,9 @@ var prodArr=
         price: 102,
         dprice: "",
         star: 4.8,
-        review: "(3503)"
+        review: "(3503)",
+        pearks: false,
+        pvalue: 102
     },
 
     {
@@ -217,7 +255,9 @@ var prodArr=
         price: 58,
         dprice: "",
         star: 4.7,
-        review: "(2366)"
+        review: "(2366)",
+        pearks: false,
+        pvalue: 58
     },
 
     {
@@ -228,7 +268,9 @@ var prodArr=
         price: 376,
         dprice: "($472 Value)",
         star: 0,
-        review: ""
+        review: "",
+        pearks: true,
+        pvalue: 338
     },
 
     {
@@ -239,7 +281,9 @@ var prodArr=
         price: 398,
         dprice: "($500 Value)",
         star: 0,
-        review: ""
+        review: "",
+        pearks: true,
+        pvalue: 358
     },
 
     {
@@ -250,7 +294,9 @@ var prodArr=
         price: 312,
         dprice: "($395 Value)",
         star: 0,
-        review: ""
+        review: "",
+        pearks: true,
+        pvalue: 280
     },
 
     {
@@ -261,7 +307,9 @@ var prodArr=
         price: 307,
         dprice: "($390 Value)",
         star: 0,
-        review: ""
+        review: "", 
+        pearks: true,
+        pvalue: 276
     },
 
     // next page
@@ -274,7 +322,9 @@ var prodArr=
         price: 403,
         dprice: "($505 Value)",
         star: 0,
-        review: ""
+        review: "",
+        pearks: true,
+        pvalue: 362
     },
 
     {
@@ -285,7 +335,9 @@ var prodArr=
         price: 318,
         dprice: "($400 Value)",
         star: 4.3,
-        review: "(190)"
+        review: "(190)",
+        pearks: true,
+        pvalue: 286
     },
 
     {
@@ -296,7 +348,9 @@ var prodArr=
         price: 60,
         dprice: "",
         star: 4.6,
-        review: "(926)"
+        review: "(926)",
+        pearks: false,
+        pvalue: 60
     },
 
     {
@@ -307,7 +361,9 @@ var prodArr=
         price: 60,
         dprice: "",
         star: 4.5,
-        review: "(377)"
+        review: "(377)",
+        pearks: false,
+        pvalue: 60
     },
 
     {
@@ -318,7 +374,9 @@ var prodArr=
         price: 60,
         dprice: "",
         star: 4.7,
-        review: "(628)"
+        review: "(628)",
+        pearks: false,
+        pvalue: 60
     },
 
     {
@@ -329,7 +387,9 @@ var prodArr=
         price: 60,
         dprice: "",
         star: 4.7,
-        review: "(360)"
+        review: "(360)",
+        pearks: false,
+        pvalue: 60
     },
 
     {
@@ -340,7 +400,9 @@ var prodArr=
         price: 60,
         dprice: "",
         star: 4.8,
-        review: "(571)"
+        review: "(571)",
+        pearks: false,
+        pvalue: 60
     },
 
     {
@@ -351,7 +413,9 @@ var prodArr=
         price: 45,
         dprice: "",
         star: 0,
-        review: ""
+        review: "",
+        pearks: false,
+        pvalue: 45
     },
 
     {
@@ -362,7 +426,9 @@ var prodArr=
         price: 45,
         dprice: "",
         star: 4.8,
-        review: "(100)"
+        review: "(100)",
+        pearks: false,
+        pvalue: 45
     },
 
     {
@@ -373,7 +439,9 @@ var prodArr=
         price: 50,
         dprice: "",
         star: 0,
-        review: ""
+        review: "",
+        pearks: false,
+        pvalue: 50
     },
 
     {
@@ -384,7 +452,9 @@ var prodArr=
         price: 90,
         dprice: "",
         star: 0,
-        review: ""
+        review: "",
+        pearks: false,
+        pvalue: 90
     },
 
     {
@@ -395,7 +465,9 @@ var prodArr=
         price: 90,
         dprice: "",
         star: 0,
-        review: ""
+        review: "",
+        pearks: false,
+        pvalue: 90
     },
 
     {
@@ -406,7 +478,9 @@ var prodArr=
         price: 90,
         dprice: "",
         star: 0,
-        review: ""
+        review: "",
+        pearks: false,
+        pvalue: 90
     },
 
     {
@@ -417,7 +491,9 @@ var prodArr=
         price: 90,
         dprice: "",
         star: 0,
-        review: ""
+        review: "",
+        pearks: false,
+        pvalue: 90
     },
 
     {
@@ -428,7 +504,9 @@ var prodArr=
         price: 45,
         dprice: "",
         star: 0,
-        review: ""
+        review: "",
+        pearks: false,
+        pvalue: 45
     },
 
     {
@@ -439,7 +517,9 @@ var prodArr=
         price: 120,
         dprice: "",
         star: 0,
-        review: ""
+        review: "",
+        pearks: false,
+        pvalue: 120
     },
 
     {
@@ -450,7 +530,9 @@ var prodArr=
         price: 22,
         dprice: "",
         star: 0,
-        review: ""
+        review: "",
+        pearks: false,
+        pvalue: 22
     },
 
     {
@@ -461,7 +543,9 @@ var prodArr=
         price: 50,
         dprice: "",
         star: 0,
-        review: ""
+        review: "",
+        pearks: false,
+        pvalue: 50
     },
 
     {
@@ -472,7 +556,9 @@ var prodArr=
         price: 110,
         dprice: "",
         star: 0,
-        review: ""
+        review: "",
+        pearks: false,
+        pvalue: 110
     },
 
     {
@@ -483,7 +569,9 @@ var prodArr=
         price: 40,
         dprice: "",
         star: 0,
-        review: ""
+        review: "",
+        pearks: false,
+        pvalue: 40
     },
 
     {
@@ -494,7 +582,9 @@ var prodArr=
         price: 45,
         dprice: "",
         star: 4.9,
-        review: "(78)"
+        review: "(78)",
+        pearks: false,
+        pvalue: 45
     },
 
     {
@@ -505,7 +595,9 @@ var prodArr=
         price: 50,
         dprice: "",
         star: 0,
-        review: ""
+        review: "",
+        pearks: false,
+        pvalue: 50
     },
 
     {
@@ -516,7 +608,9 @@ var prodArr=
         price: 105,
         dprice: "",
         star: 0,
-        review: ""
+        review: "",
+        pearks: false,
+        pvalue: 105
     },
 
     {
@@ -527,7 +621,9 @@ var prodArr=
         price: 40,
         dprice: "",
         star: 0,
-        review: ""
+        review: "",
+        pearks: false,
+        pvalue: 40
     },
 
     // next page
@@ -540,7 +636,9 @@ var prodArr=
         price: 45,
         dprice: "",
         star: 0,
-        review: ""
+        review: "",
+        pearks: false,
+        pvalue: 45
     },
 
     {
@@ -551,7 +649,9 @@ var prodArr=
         price: 90,
         dprice: "",
         star: 0,
-        review: ""
+        review: "",
+        pearks: false,
+        pvalue: 90
     },
 
     {
@@ -562,7 +662,9 @@ var prodArr=
         price: 60,
         dprice: "",
         star: 0,
-        review: ""
+        review: "",
+        pearks: false,
+        pvalue: 60
     },
 
     {
@@ -573,7 +675,9 @@ var prodArr=
         price: 34,
         dprice: "",
         star: 0,
-        review: ""
+        review: "",
+        pearks: false,
+        pvalue: 34
     },
 
     {
@@ -584,7 +688,9 @@ var prodArr=
         price: 78,
         dprice: "",
         star: 0,
-        review: ""
+        review: "",
+        pearks: false,
+        pvalue: 78
     },
 
     {
@@ -595,7 +701,9 @@ var prodArr=
         price: 40,
         dprice: "",
         star: 0,
-        review: ""
+        review: "",
+        pearks: false,
+        pvalue: 40
     },
 
     {
@@ -606,7 +714,9 @@ var prodArr=
         price: 80,
         dprice: "",
         star: 0,
-        review: ""
+        review: "",
+        pearks: false,
+        pvalue: 80
     },
 
     {
@@ -617,7 +727,9 @@ var prodArr=
         price: 48,
         dprice: "",
         star: 0,
-        review: ""
+        review: "",
+        pearks: false,
+        pvalue: 48
     },
 
     {
@@ -628,7 +740,9 @@ var prodArr=
         price: 428,
         dprice: "($535 Value)",
         star: 0,
-        review: ""
+        review: "",
+        pearks: true,
+        pvalue: 386
     },
 
     {
@@ -639,7 +753,9 @@ var prodArr=
         price: 342,
         dprice: "",
         star: 0,
-        review: ""
+        review: "",
+        pearks: true,
+        pvalue: 307
     },
 
     {
@@ -650,7 +766,9 @@ var prodArr=
         price: 297,
         dprice: "",
         star: 0,
-        review: ""
+        review: "",
+        pearks: true,
+        pvalue: 267
     },
 
     {
@@ -661,7 +779,9 @@ var prodArr=
         price: 260,
         dprice: "",
         star: 0,
-        review: ""
+        review: "",
+        pearks: false,
+        pvalue: 260
     },
 
     {
@@ -672,7 +792,9 @@ var prodArr=
         price: 32,
         dprice: "",
         star: 0,
-        review: ""
+        review: "",
+        pearks: false,
+        pvalue: 32
     },
 
     {
@@ -683,7 +805,9 @@ var prodArr=
         price: 35,
         dprice: "",
         star: 0,
-        review: ""
+        review: "",
+        pearks: false,
+        pvalue: 35
     },
 
     {
@@ -694,7 +818,9 @@ var prodArr=
         price: 35,
         dprice: "",
         star: 0,
-        review: ""
+        review: "",
+        pearks: false,
+        pvalue: 35
     },
 
     {
@@ -705,7 +831,9 @@ var prodArr=
         price: 38,
         dprice: "",
         star: 4.9,
-        review: "(1690)"
+        review: "(1690)",
+        pearks: false,
+        pvalue: 38
     },
 
     {
@@ -716,7 +844,9 @@ var prodArr=
         price: 34,
         dprice: "",
         star: 4.9,
-        review: "(2527)"
+        review: "(2527)",
+        pearks: false,
+        pvalue: 34
     },
 
     {
@@ -727,7 +857,9 @@ var prodArr=
         price: 32,
         dprice: "",
         star: 4.8,
-        review: "(3047)"
+        review: "(3047)",
+        pearks: false,
+        pvalue: 32
     },
 
     {
@@ -738,7 +870,9 @@ var prodArr=
         price: 32,
         dprice: "",
         star: 4.8,
-        review: "(1881)"
+        review: "(1881)",
+        pearks: false,
+        pvalue: 32
     },
 
     {
@@ -749,7 +883,9 @@ var prodArr=
         price: 27,
         dprice: "",
         star: 4.9,
-        review: "(2955)"
+        review: "(2955)",
+        pearks: false,
+        pvalue: 27
     },
 
     {
@@ -760,7 +896,9 @@ var prodArr=
         price: 27,
         dprice: "",
         star: 4.7,
-        review: "(1594)"
+        review: "(1594)",
+        pearks: false,
+        pvalue: 27
     },
 
     {
@@ -771,7 +909,9 @@ var prodArr=
         price: 19,
         dprice: "",
         star: 4.8,
-        review: "(4188)"
+        review: "(4188)",
+        pearks: false,
+        pvalue: 19
     },
 
     {
@@ -782,7 +922,9 @@ var prodArr=
         price: 11,
         dprice: "",
         star: 0,
-        review: ""
+        review: "",
+        pearks: false,
+        pvalue: 11
     },
 
     {
@@ -793,7 +935,9 @@ var prodArr=
         price: 27,
         dprice: "",
         star: 0,
-        review: ""
+        review: "",
+        pearks: false,
+        pvalue: 27
     },
 
     // next page
@@ -806,7 +950,9 @@ var prodArr=
         price: 256,
         dprice: "",
         star: 0,
-        review: ""
+        review: "",
+        pearks: true,
+        pvalue: 230
     },
 
     {
@@ -817,7 +963,9 @@ var prodArr=
         price: 40,
         dprice: "",
         star: 0,
-        review: ""
+        review: "",
+        pearks: false,
+        pvalue: 40
     },
 
     {
@@ -828,7 +976,9 @@ var prodArr=
         price: 148,
         dprice: "",
         star: 0,
-        review: ""
+        review: "",
+        pearks: false,
+        pvalue: 148
     },
 
     {
@@ -839,7 +989,9 @@ var prodArr=
         price: 400,
         dprice: "($505 Value)",
         star: 0,
-        review: ""
+        review: "",
+        pearks: true,
+        pvalue: 360
     },
 
     {
@@ -850,7 +1002,9 @@ var prodArr=
         price: 400,
         dprice: "($502 Value)",
         star: 0,
-        review: ""
+        review: "",
+        pearks: true,
+        pvalue: 359
     },
 
     {
@@ -861,7 +1015,9 @@ var prodArr=
         price: 358,
         dprice: "($450 Value)",
         star: 0,
-        review: ""
+        review: "",
+        pearks: true,
+        pvalue: 322
     },
 
     {
@@ -872,7 +1028,9 @@ var prodArr=
         price: 334,
         dprice: "($420 Value)",
         star: 0,
-        review: ""
+        review: "",
+        pearks: true,
+        pvalue: 300
     },
 
     {
@@ -883,7 +1041,9 @@ var prodArr=
         price: 272,
         dprice: "($309 Value)",
         star: 0,
-        review: ""
+        review: "",
+        pearks: true,
+        pvalue: 244
     },
 
     {
@@ -894,7 +1054,9 @@ var prodArr=
         price: 328,
         dprice: "($415 Value)",
         star: 0,
-        review: ""
+        review: "",
+        pearks: true,
+        pvalue: 295
     },
 
     {
@@ -905,7 +1067,9 @@ var prodArr=
         price: 323,
         dprice: "($410 Value)",
         star: 0,
-        review: ""
+        review: "",
+        pearks: true,
+        pvalue: 390
     },
 ]
 
