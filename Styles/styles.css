@@ -1,0 +1,345 @@
+@import url("https://fonts.googleapis.com/css2?family=Gothic+A1:wght@300;400;500&family=Nanum+Gothic&family=Noto+Serif+Display:wght@300;400;500&display=swap");
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+  list-style: none;
+  font-family: "Gothic A1", sans-serif;
+}
+
+/* primary nav styling  */
+nav .navbar {
+  width: 100%;
+  margin: auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 25px;
+  border-bottom: 1px solid #111;
+}
+
+.navbar > h4 {
+  font-size: 12px;
+  color: #272829;
+  font-family: "Nanum Gothic", sans-serif;
+  letter-spacing: 3px;
+  cursor: pointer;
+}
+
+.links {
+  display: flex;
+  font-size: 13px;
+  font-weight: 600;
+  align-items: center;
+}
+.links > div {
+  margin: 0px 10px;
+  cursor: pointer;
+}
+
+.search,
+.sign_in {
+  display: flex;
+  font-weight: 500;
+  align-items: center;
+  color: #444444;
+}
+
+.bx {
+  font-size: 20px;
+  font-weight: 100;
+}
+
+.bx-shopping-bag {
+  font-size: 24px;
+  color: rgb(161, 161, 161);
+}
+
+.country > img {
+  height: 12px;
+  width: 19px;
+}
+
+/* secondary nav styling  */
+
+.secondary_nav {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  box-shadow: 2px 0 4px 0 rgb(0 0 0 / 50%);
+  background: rgba(255, 255, 255, 0.95);
+}
+
+.secondary_nav > div {
+  padding: 22px 20px;
+  font-size: 13px;
+  font-weight: 500;
+  letter-spacing: 1px;
+}
+
+.secondary_nav > div > a {
+  color: #414141;
+  position: relative;
+}
+
+.secondary_nav > div > a::after {
+  content: "";
+  position: absolute;
+  width: 0%;
+  height: 4px;
+  background-color: rgb(11, 180, 223);
+  bottom: -200%;
+  left: 0;
+  transition: width 0.2s linear;
+}
+
+.secondary_nav > div:hover a::after {
+  width: 100%;
+}
+
+/* main section styling  */
+
+main .container {
+  width: 95%;
+  margin: auto;
+  display: flex;
+}
+
+main .container .left {
+  background-color: rgb(249, 246, 244);
+}
+
+main .container .left .inner {
+  width: 66%;
+  height: 100%;
+  margin: auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.inner > h1 {
+  font-family: "Noto Serif Display", serif;
+  font-weight: 400;
+  font-size: 38px;
+  margin-bottom: 30px;
+}
+
+.inner > h1 + p {
+  font-weight: 500;
+  line-height: 1.5;
+  font-family: "Nanum Gothic", sans-serif;
+  margin-bottom: 20px;
+}
+
+.inner > p + p {
+  font-size: 12px;
+}
+.inner > p + a {
+  font-size: 12px;
+  text-decoration: underline;
+  color: #222;
+}
+.right > img {
+  width: 100%;
+}
+
+.btn {
+  margin-top: 30px;
+  font-weight: 600;
+  color: #222;
+  line-height: 2;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  padding: 6px 18px;
+  border-radius: 4px;
+  border: solid 1px #222;
+  background-color: #fff;
+}
+.btn:active {
+  box-shadow: 0 0 5px 2px #80aec9, 0 0 5px 0 rgb(0 0 0 / 50%) inset;
+}
+
+main > a {
+  position: absolute;
+  color: #111;
+  margin-top: 6px;
+  text-decoration: underline;
+  right: 40px;
+}
+
+/* carousel styling   */
+
+.carousel {
+  width: 95%;
+  height: fit-content;
+  margin: 40px auto;
+  overflow: hidden;
+  background-color: rgb(249, 246, 244);
+  user-select: none;
+}
+.carousel .carousel_items {
+  width: 100%;
+  display: grid;
+  grid-auto-flow: column;
+  grid-auto-columns: 25%;
+  overflow-y: hidden;
+  overflow-x: auto;
+}
+
+.carousel .carousel_items::-webkit-scrollbar {
+  height: 5px;
+}
+
+.carousel .carousel_items::-webkit-scrollbar-thumb {
+  background: #888;
+  cursor: pointer;
+}
+.carousel .carousel_items::-webkit-scrollbar-track {
+  background: rgb(216, 216, 216);
+  cursor: pointer;
+}
+.carousel .carousel_items > div {
+  position: relative;
+  margin: 30px 10px;
+  padding: 30px 10px;
+  background-color: #fff;
+  text-align: center;
+}
+
+.carousel .carousel_items > div:first-child {
+  background: transparent;
+  background-image: url("https://www.rodanandfields.com/en-us/medias/Best-Sellers-Image-Desktop.jpg?context=bWFzdGVyfHJvb3R8NjA5MTd8aW1hZ2UvanBlZ3xoOTcvaGNkLzEyODg5MTg3ODExMzU4LmpwZ3w2ZGZjZGYxNzg4ZDY2ODI2NzQyZTMyNGI2YmExYmRkNGNjYTBkNGI4MzE5OTIwM2M4M2Q1MGZlMmY1YmFjMDJk");
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: bottom;
+  padding: 0 20px;
+  display: flex;
+  flex-direction: column;
+  text-align: left;
+  justify-content: space-evenly;
+  align-items: flex-start;
+}
+
+.carousel .carousel_items > div > h1 {
+  font-family: "Noto Serif Display", serif;
+  font-weight: 400;
+  font-size: 38px;
+}
+
+.carousel .carousel_items > div > img {
+  width: 260px;
+}
+
+.carousel .carousel_items > div > img + span {
+  position: absolute;
+  top: 16px;
+  right: 30px;
+  border: 1px solid #bbb;
+  font-size: 13px;
+  color: #bbb;
+  padding: 4px 10px;
+}
+
+h1 + a {
+  color: #111;
+  text-decoration: underline;
+}
+
+.carousel_items > div > h4 {
+  text-align: left;
+  font-weight: 600;
+  font-size: 15px;
+  padding-bottom: 20px;
+  color: #272829;
+}
+
+.carousel_items > div > h4 + p,
+.carousel_items > div > h3 + p {
+  font-size: 14px;
+  text-align: left;
+  padding-bottom: 20px;
+}
+
+.carousel_items > div > h3 {
+  text-align: left;
+  font-weight: 600;
+  font-size: 15px;
+  color: #272829;
+}
+
+.stars {
+  text-align: left;
+  font-size: 14px;
+  font-weight: 500;
+}
+
+.stars::before {
+  content: "★★★★★";
+  font-size: 13px;
+  letter-spacing: 2px;
+}
+.stars + button {
+  width: 100%;
+  box-shadow: 0 2px 4px 0 rgb(0 0 0 / 25%);
+}
+
+.stars + button:hover {
+  box-shadow: 0 0 0 0 #000, 0 0 5px 0 rgb(0 0 0 / 15%) inset;
+}
+
+/* All products styling  */
+
+.all_products {
+  background-color: rgb(249, 246, 244);
+  width: 95%;
+  height: 84vh;
+  margin: 40px auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.all_products > h1,
+.all_products > h1 > i {
+  font-family: "Noto Serif Display", serif;
+  font-weight: 400;
+  font-size: 38px;
+  padding-bottom: 20px;
+}
+
+.all_products > .products {
+  display: flex;
+}
+
+.all_products > .products > div {
+  margin: 20px;
+  padding: 20px;
+  background-color: #fefcfd;
+  border: 2px solid rgb(235, 231, 228);
+  border-radius: 10px;
+  text-align: center;
+  color: #5c5c5c;
+}
+
+.all_products > .products > div > img {
+  width: 100%;
+}
+
+.all_products > .products > div > h4 {
+  letter-spacing: 1px;
+}
+
+.btn2 {
+  background-color: transparent;
+  padding: 10px;
+  width: 350px;
+  cursor: pointer;
+}
+
+.btn2:hover {
+  text-decoration: underline;
+}
