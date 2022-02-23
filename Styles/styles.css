@@ -8,7 +8,48 @@
   font-family: "Gothic A1", sans-serif;
 }
 
+/* scroll-up button styling*/
+.scroll-up-btn {
+  position: fixed;
+  height: 45px;
+  width: 45px;
+  background-color: #00b8e5;
+  border-radius: 50px;
+  right: 20px;
+  bottom: 30px;
+  text-align: center;
+  line-height: 45px;
+  color: #fff;
+  z-index: 998;
+  font-size: 14px;
+  cursor: pointer;
+  opacity: 0;
+  pointer-events: none;
+  box-shadow: 0.1rem 0.1rem 0.5rem 0rem rgb(168 164 173 / 50%);
+  -webkit-transition: all 0.3s ease;
+  transition: all 0.3s ease;
+}
+
+.scroll-up-btn.show {
+  bottom: 70px;
+  opacity: 1;
+  pointer-events: auto;
+}
+
+.scroll-up-btn:hover {
+  -webkit-filter: brightness(90%);
+  filter: brightness(90%);
+}
+
 /* primary nav styling  */
+nav {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  height: fit-content;
+  z-index: 999999;
+  background-color: #fff;
+}
 nav .navbar {
   width: 100%;
   margin: auto;
@@ -78,10 +119,51 @@ nav .navbar {
   font-weight: 500;
   letter-spacing: 1px;
 }
+.secondary_nav > div > .dropDown {
+  display: flex;
+  position: absolute;
+  top: 100%;
+  left: 0;
+  background: rgba(255, 255, 255, 0.95);
+  box-shadow: 0 2px 4px 0 rgb(0 0 0 / 25%);
+  padding: 40px;
+  height: fit-content;
+  justify-content: space-around;
+  width: 100%;
+  opacity: 0;
+  pointer-events: none;
+  transform: translateY(-40px);
+  transition: all 0.3s ease;
+}
 
-.secondary_nav > div > a {
+.secondary_nav > .drop:hover .dropDown {
+  opacity: 1;
+  transform: translateY(0px);
+  pointer-events: auto;
+}
+
+.secondary_nav > div > .dropDown > div > h4 {
+  margin-bottom: 20px;
+}
+
+.secondary_nav > div > .dropDown > div > ul > li {
+  padding-top: 10px;
+}
+.secondary_nav > div > a,
+.secondary_nav > div > .dropDown > div > ul > li > a {
   color: #414141;
   position: relative;
+}
+
+.secondary_nav > div > .dropDown > div > ul > li > a::after {
+  content: "";
+  position: absolute;
+  width: 0%;
+  height: 2px;
+  background-color: rgb(11, 180, 223);
+  top: 100%;
+  left: 0;
+  transition: width 0.2s linear;
 }
 
 .secondary_nav > div > a::after {
@@ -95,12 +177,16 @@ nav .navbar {
   transition: width 0.2s linear;
 }
 
-.secondary_nav > div:hover a::after {
+.secondary_nav > div:hover a::after,
+.secondary_nav > div > .dropDown > div > ul > li:hover a::after {
   width: 100%;
 }
 
 /* main section styling  */
 
+main {
+  margin-top: 134px;
+}
 main .container {
   width: 95%;
   margin: auto;
@@ -281,12 +367,15 @@ h1 + a {
   font-size: 13px;
   letter-spacing: 2px;
 }
-.stars + button {
+.stars + button,
+.left + button {
   width: 100%;
+  cursor: pointer;
   box-shadow: 0 2px 4px 0 rgb(0 0 0 / 25%);
 }
 
-.stars + button:hover {
+.stars + button:hover,
+.left + button:hover {
   box-shadow: 0 0 0 0 #000, 0 0 5px 0 rgb(0 0 0 / 15%) inset;
 }
 
@@ -312,12 +401,16 @@ h1 + a {
 }
 
 .all_products > .products {
-  display: flex;
+  display: grid;
+  padding: 20px;
+  gap: 20px;
+  grid-template-columns: repeat(6, 1fr);
+  grid-template-rows: auto;
 }
 
 .all_products > .products > div {
-  margin: 20px;
-  padding: 20px;
+  position: relative;
+  padding: 10px;
   background-color: #fefcfd;
   border: 2px solid rgb(235, 231, 228);
   border-radius: 10px;
@@ -327,9 +420,22 @@ h1 + a {
 
 .all_products > .products > div > img {
   width: 100%;
+  border-radius: 14px;
 }
 
+.all_products > .products > div > img:nth-child(2) {
+  position: absolute;
+  top: 0;
+  left: 0;
+  opacity: 0;
+}
+
+.all_products > .products > div > img:hover {
+  opacity: 0.9;
+  pointer-events: all;
+}
 .all_products > .products > div > h4 {
+  margin-top: 10px;
   letter-spacing: 1px;
 }
 
@@ -342,4 +448,224 @@ h1 + a {
 
 .btn2:hover {
   text-decoration: underline;
+}
+
+/* grid carousel styling  */
+
+.grid_carousel {
+  width: 95%;
+  height: fit-content;
+  margin: auto;
+  overflow: hidden;
+  user-select: none;
+}
+.grid_carousel .grid_carousel_items {
+  width: 100%;
+  display: grid;
+  grid-auto-flow: column;
+  grid-auto-columns: 50%;
+  overflow-y: hidden;
+  overflow-x: auto;
+}
+
+.grid_carousel > .grid_carousel_items > .item {
+  display: flex;
+  margin: 30px 10px;
+  border-radius: 4px;
+}
+
+.grid_carousel > .grid_carousel_items > .item:nth-child(1) {
+  background-color: #f4efe7;
+}
+.grid_carousel > .grid_carousel_items > .item:nth-child(2) {
+  background-color: #cde2c7;
+}
+.grid_carousel > .grid_carousel_items > .item:nth-child(3) {
+  background-color: #eee1db;
+}
+.item > img {
+  width: 50%;
+  border-radius: 4px;
+}
+
+.grid_carousel > .grid_carousel_items > .item > .left_item {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  width: 50%;
+  padding: 20px;
+}
+
+.item > .left_item > h2 {
+  font-family: "Noto Serif Display", serif;
+  font-weight: 400;
+  font-size: 38px;
+}
+
+.item > .left_item > h2 + p {
+  font-weight: 500;
+  width: 80%;
+}
+
+.item > .left_item > a {
+  color: #111;
+  text-decoration: underline;
+  font-weight: 500;
+}
+
+.grid_carousel .grid_carousel_items::-webkit-scrollbar {
+  height: 5px;
+}
+
+.grid_carousel .grid_carousel_items::-webkit-scrollbar-thumb {
+  background: #888;
+  cursor: pointer;
+}
+.grid_carousel .grid_carousel_items::-webkit-scrollbar-track {
+  background: rgb(216, 216, 216);
+  cursor: pointer;
+}
+
+/* medical section styling  */
+
+.medical {
+  background-color: #f8f8f8;
+  width: 95%;
+  height: 70vh;
+  margin: 40px auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.medical > div {
+  padding: 20px;
+  margin: 20px;
+  text-align: center;
+}
+
+.medical > div > h3 {
+  font-family: "Noto Serif Display", serif;
+  font-weight: 400;
+  font-size: 22px;
+  letter-spacing: 1px;
+  margin: 10px 0;
+}
+.medical > div > img {
+  width: 100%;
+}
+
+.medical > div > p {
+  font-weight: 400;
+  padding: 20px 40px;
+}
+
+.medical > div > a {
+  color: #111;
+  text-decoration: underline;
+  font-weight: 400;
+}
+
+section + h4 {
+  margin-left: 40px;
+  font-size: 22px;
+  font-weight: 500;
+}
+
+/* services styling  */
+
+.services {
+  width: 95%;
+  padding: 40px;
+  margin: 4px auto;
+  background-color: #e1eaf1;
+}
+
+.services > .inner {
+  background-color: #fff;
+  display: flex;
+  justify-content: space-around;
+  width: 80%;
+  padding: 40px;
+  margin: auto;
+}
+
+.services > .inner > .left {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+}
+.services > .inner > .left + button {
+  width: unset;
+}
+
+.services > .inner > .left > h1 {
+  font-family: "Noto Serif Display", serif;
+  font-weight: 400;
+  font-size: 28px;
+  width: 60%;
+  text-align: center;
+}
+
+.services > .inner > .left > ul > li {
+  list-style: disc;
+  font-weight: 500;
+}
+
+/* footer styling  */
+footer .primary {
+  margin: 40px 0px;
+  padding: 10px;
+  border-top: 1px solid rgb(207, 207, 207);
+  border-bottom: 1px solid rgb(207, 207, 207);
+  display: flex;
+}
+
+footer .primary > div {
+  padding: 20px;
+}
+
+footer .primary > div:nth-child(2) {
+  margin-left: 60px;
+}
+footer .primary > div:nth-child(3) {
+  margin-left: 200px;
+}
+
+footer .primary > div > h5 {
+  margin-bottom: 20px;
+}
+
+footer .primary > div > ul > li {
+  padding: 10px 0;
+  font-size: 13px;
+  font-weight: 500;
+}
+
+footer .primary > div > ul > li > a {
+  color: #000;
+}
+
+footer .primary > div > h3 {
+  font-family: "Noto Serif Display", serif;
+  font-weight: 300;
+  font-size: 24px;
+  margin-bottom: 40px;
+}
+
+footer .primary > div > a > i {
+  font-size: 26px;
+  padding: 0 30px;
+  color: #000;
+}
+
+footer .secondary {
+  display: flex;
+  padding: 0 20px 20px 20px;
+}
+
+footer .secondary > div {
+  padding: 0 4px;
+  font-size: 13px;
 }
