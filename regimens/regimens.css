@@ -1,0 +1,116 @@
+@import url('https://fonts.googleapis.com/css2?family=Bodoni+Moda&family=Montserrat:wght@400;600;700&family=Nanum+Gothic&family=Noto+Serif+Display&display=swap');
+
+body
+{
+    font-family: "Montserrat", sans-serif;
+    text-align: center;
+}
+#title
+{
+    width: 52%;
+    margin: 60px auto;
+    text-align: center;
+}
+p
+{
+    font-family: "Montserrat", sans-serif;
+    font-weight: lighter;
+    line-height: 1.7rem;
+    color: rgb(61, 61, 61);
+}
+.reg
+{
+    font-family: 'Bodoni Moda', serif;
+    font-size: 30px;
+    font-weight: lighter;
+    color: #222;
+    margin-bottom: 0px;
+}
+
+
+#prods
+{
+    display: grid;
+    margin: auto;
+    width: 82%;
+    height: auto;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(4, 1fr);
+}
+
+img
+{
+    height: 340px;
+    width: 340px;
+}
+
+#prods>div>div
+{
+    display: flex;
+    width: 70%;
+    margin: auto;
+    text-align: center;
+    align-items: center;
+    justify-content: space-evenly;
+    height: 40px;
+    font-size: 14px;
+}
+
+h2
+{
+    color: #31C2E8;
+    font-size: 12px;
+    margin-left: 10px;
+    font-weight: 700;
+}
+
+h3
+{
+    font-weight: lighter;
+    font-weight: 600;
+    font-size: 17px;
+    color: #383838;
+}
+
+button
+{
+    width: 85%;
+    height: 50px;
+    font-family: "Montserrat", sans-serif;
+    word-spacing: 2px;
+    letter-spacing: 2px;
+    font-weight: 600;
+    font-size: 15px;
+    background-color: white;
+    border: 1px solid #383838;
+    color: #383838;
+}
+
+#prods>div>div>p:nth-child(2)
+{
+    color: gray;
+}
+
+#nav
+{
+    width: 170px;
+    display: flex;
+    margin-top: 50px;
+    gap: 20px;
+    position: absolute;
+    right: 130px;
+    align-items: center;
+}
+
+#nav>p
+{
+    font-size: 20px;
+    font-family: 'Nanum Gothic', sans-serif;
+}
+#nav>button
+{
+    height: 45px;
+}
+
+
+  
