@@ -47,12 +47,13 @@ img
 #prods>div>div
 {
     display: flex;
+    flex-wrap: wrap;
     width: 70%;
     margin: auto;
     text-align: center;
     align-items: center;
     justify-content: space-evenly;
-    height: 40px;
+    height: auto;
     font-size: 14px;
 }
 
@@ -62,11 +63,11 @@ h2
     font-size: 12px;
     margin-left: 10px;
     font-weight: 700;
+    line-height: 0px;
 }
 
 h3
 {
-    font-weight: lighter;
     font-weight: 600;
     font-size: 17px;
     color: #383838;
@@ -113,4 +114,124 @@ button
 }
 
 
+
+
+@media all and (min-width: 800px) and (max-width:1000px)
+{
+    #title
+    {
+        width: 60%;
+        margin: 60px auto;
+        text-align: center;
+    }
+
+    #prods
+    {
+        width: 800px;
+    }
+
+    img
+    {
+        height: 150px;
+        width: 150px;
+    }
+
+    p
+    {
+        line-height: 1.3rem;
+        font-size: 15px;
+    }
+    #prods>div>div
+    {
+        width: 60%;
+    }
+    #prods>div>div>p
+    {
+        font-size: 11px;
+    }
+    
+    h3
+    {
+        font-size: 15px;
+    }
+
+    button
+    {
+        height: 45px;
+        font-size: 12px;
+    }
+    #nav
+    {
+        right: 40px;
+    }
+}
+
+@media all and (min-width: 645px) and (max-width:799px)
+{
+    #title
+    {
+        width: 90%;
+    }
+
+    #prods
+    {
+        width: 100%;
+    }
+
+    img
+    {
+        height: 200px;
+        width: 100%;
+    }
+    button
+    {
+        font-size: 12px;
+    }
+    #prods>div>div
+    {
+        width: 60%;
+    }
+    #prods>div>div>p
+    {
+        font-size: 10px;
+    }
+    #nav
+    {
+        right: 20px;
+    }
+}
   
+@media all and (min-width: 50px) and (max-width:644px)
+{
+    #title
+    {
+        width: 100%;
+    }
+    #prods
+    {
+        width: 100%;
+        grid-template-columns: repeat(2, 1fr);
+    }
+    img
+    {
+        height: 150px;
+        width: 150px;
+    }
+    #prods>div>div
+    {
+        width: 55%;
+    }
+    
+    button
+    {
+        width: 95%;
+    }
+
+    #nav
+    {
+        position: absolute;
+        left: 0;
+        right: 0;
+        margin: 50px auto;
+    }
+}
