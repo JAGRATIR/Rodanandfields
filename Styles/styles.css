@@ -24,6 +24,7 @@ nav .navbar {
   color: #272829;
   font-family: "Nanum Gothic", sans-serif;
   letter-spacing: 3px;
+  cursor: pointer;
 }
 
 .links {
@@ -40,8 +41,9 @@ nav .navbar {
 .search,
 .sign_in {
   display: flex;
+  font-weight: 500;
   align-items: center;
-  color: #777777;
+  color: #444444;
 }
 
 .bx {
@@ -158,4 +160,186 @@ main .container .left .inner {
 }
 .btn:active {
   box-shadow: 0 0 5px 2px #80aec9, 0 0 5px 0 rgb(0 0 0 / 50%) inset;
+}
+
+main > a {
+  position: absolute;
+  color: #111;
+  margin-top: 6px;
+  text-decoration: underline;
+  right: 40px;
+}
+
+/* carousel styling   */
+
+.carousel {
+  width: 95%;
+  height: fit-content;
+  margin: 40px auto;
+  overflow: hidden;
+  background-color: rgb(249, 246, 244);
+  user-select: none;
+}
+.carousel .carousel_items {
+  width: 100%;
+  display: grid;
+  grid-auto-flow: column;
+  grid-auto-columns: 25%;
+  overflow-y: hidden;
+  overflow-x: auto;
+}
+
+.carousel .carousel_items::-webkit-scrollbar {
+  height: 5px;
+}
+
+.carousel .carousel_items::-webkit-scrollbar-thumb {
+  background: #888;
+  cursor: pointer;
+}
+.carousel .carousel_items::-webkit-scrollbar-track {
+  background: rgb(216, 216, 216);
+  cursor: pointer;
+}
+.carousel .carousel_items > div {
+  position: relative;
+  margin: 30px 10px;
+  padding: 30px 10px;
+  background-color: #fff;
+  text-align: center;
+}
+
+.carousel .carousel_items > div:first-child {
+  background: transparent;
+  background-image: url("https://www.rodanandfields.com/en-us/medias/Best-Sellers-Image-Desktop.jpg?context=bWFzdGVyfHJvb3R8NjA5MTd8aW1hZ2UvanBlZ3xoOTcvaGNkLzEyODg5MTg3ODExMzU4LmpwZ3w2ZGZjZGYxNzg4ZDY2ODI2NzQyZTMyNGI2YmExYmRkNGNjYTBkNGI4MzE5OTIwM2M4M2Q1MGZlMmY1YmFjMDJk");
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: bottom;
+  padding: 0 20px;
+  display: flex;
+  flex-direction: column;
+  text-align: left;
+  justify-content: space-evenly;
+  align-items: flex-start;
+}
+
+.carousel .carousel_items > div > h1 {
+  font-family: "Noto Serif Display", serif;
+  font-weight: 400;
+  font-size: 38px;
+}
+
+.carousel .carousel_items > div > img {
+  width: 260px;
+}
+
+.carousel .carousel_items > div > img + span {
+  position: absolute;
+  top: 16px;
+  right: 30px;
+  border: 1px solid #bbb;
+  font-size: 13px;
+  color: #bbb;
+  padding: 4px 10px;
+}
+
+h1 + a {
+  color: #111;
+  text-decoration: underline;
+}
+
+.carousel_items > div > h4 {
+  text-align: left;
+  font-weight: 600;
+  font-size: 15px;
+  padding-bottom: 20px;
+  color: #272829;
+}
+
+.carousel_items > div > h4 + p,
+.carousel_items > div > h3 + p {
+  font-size: 14px;
+  text-align: left;
+  padding-bottom: 20px;
+}
+
+.carousel_items > div > h3 {
+  text-align: left;
+  font-weight: 600;
+  font-size: 15px;
+  color: #272829;
+}
+
+.stars {
+  text-align: left;
+  font-size: 14px;
+  font-weight: 500;
+}
+
+.stars::before {
+  content: "★★★★★";
+  font-size: 13px;
+  letter-spacing: 2px;
+}
+.stars + button {
+  width: 100%;
+  box-shadow: 0 2px 4px 0 rgb(0 0 0 / 25%);
+}
+
+.stars + button:hover {
+  box-shadow: 0 0 0 0 #000, 0 0 5px 0 rgb(0 0 0 / 15%) inset;
+}
+
+/* All products styling  */
+
+.all_products {
+  background-color: rgb(249, 246, 244);
+  width: 95%;
+  height: 84vh;
+  margin: 40px auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.all_products > h1,
+.all_products > h1 > i {
+  font-family: "Noto Serif Display", serif;
+  font-weight: 400;
+  font-size: 38px;
+  padding-bottom: 20px;
+}
+
+.all_products > .products {
+  display: flex;
+}
+
+.all_products > .products > div {
+  margin: 20px;
+  padding: 20px;
+  background-color: #fefcfd;
+  border: 2px solid rgb(235, 231, 228);
+  border-radius: 10px;
+  text-align: center;
+  color: #5c5c5c;
+}
+
+.all_products > .products > div > img {
+  width: 100%;
+}
+
+.all_products > .products > div > h4 {
+  letter-spacing: 1px;
+}
+
+.btn2 {
+  background-color: transparent;
+  padding: 10px;
+  width: 350px;
+  cursor: pointer;
+}
+
+.btn2:hover {
+  text-decoration: underline;
 }
