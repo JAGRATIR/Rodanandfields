@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Your Bag | Rodan + Fields®</title>
+    <link rel="stylesheet" href="empty_bag.css">
+</head>
+<body>
+    <div id="title">
+    
+    </div>
+</body>
+</html>
+
+<script src="../All Products Script/bag.js"></script>
+
+<script>
+    var bagArr=JSON.parse(localStorage.getItem("bagArr")) || [];
+
+
+    if(bagArr.length==0)
+    {
+        var h1=document.createElement("h1");
+        h1.setAttribute("class", "reg");
+        h1.innerText="Your Bag Is Empty";
+
+        var p=document.createElement("p");
+        p.innerText="Shop now to add products to your bag.";
+
+        var div=document.createElement("button");
+        div.setAttribute('class', 'blackb');
+        div.innerText="START SHOPPING";
+
+        var h5=document.createElement("h5");
+        h5.innerText="Please refer to our shipping page for more information";
+
+        document.querySelector("#title").append(h1, p, div, h5);
+    }
+    else
+    {
+        bagArr.map(function(ele, index)
+        {
+
+        });
+    }
+
+
+</script>
