@@ -1,0 +1,79 @@
+/* @import url("https://fonts.googleapis.com/css2?family=Gothic+A1:wght@300;400;500&family=Nanum+Gothic&family=Noto+Serif+Display:wght@300;400;500&display=swap"); */
+*{
+    font-family:"Gothic A1", sans-serif;
+}
+.navbar {
+    width: 100%;
+    /* align-items: center; */
+    display:flex;
+    justify-content: center;
+    padding: 25px;
+    margin-left:0px;
+    border-bottom: 1px solid #111;
+  } 
+  #lower_div{
+      display:flex;
+      justify-content: space-around;
+      border: 1px solid red;
+      height:500px;
+      /* width:300px; */
+      margin-top:30px;
+      
+  }
+  input[type]{
+      width: 100%;
+  }
+  input[type=email]:focus{
+        border:1px solid red;
+  }
+
+  #msg {
+      display:flex;
+      position:relative;
+      
+  }
+  #msg p{
+      padding:10px 35px;
+      font-size:12px;
+  }
+
+  .valid{
+      color:green;
+  }
+  .valid::before{
+    position:relative;
+    left:-35px;
+    content: "✔";
+  }
+.invalid{
+    color: red;
+}
+ .invalid:before {
+    position: relative;
+    left: -35px;
+    content: "✖";
+  }
+
+  #lower_div > div:first-child{
+      width:500px;
+  }
+ #lower_div > div:last-child{
+
+        /* border:1px solid #111; */
+        margin-left: 100px; 
+        width: 500px;
+}
+
+#contId{
+    background-color: black;
+    color: white;
+    width:100%;
+    margin-top:30px;
+    height:30px;
+    font-size:20px;
+}
+
+#orderid{
+    display: flex;
+    justify-content: space-between;
+}
