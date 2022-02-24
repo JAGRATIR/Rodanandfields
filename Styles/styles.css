@@ -8,6 +8,10 @@
   font-family: "Gothic A1", sans-serif;
 }
 
+html,
+body {
+  scroll-behavior: smooth;
+}
 /* scroll-up button styling*/
 .scroll-up-btn {
   position: fixed;
@@ -41,6 +45,17 @@
   filter: brightness(90%);
 }
 
+/* body overlay  */
+.body__overlay {
+  z-index: 999;
+  width: 100%;
+  height: 100%;
+  left: 0;
+  top: 0;
+  background-color: rgba(96, 96, 96, 0.7);
+  position: fixed;
+}
+
 /* primary nav styling  */
 nav {
   position: fixed;
@@ -49,6 +64,7 @@ nav {
   height: fit-content;
   z-index: 999999;
   background-color: #fff;
+  user-select: none;
 }
 nav .navbar {
   width: 100%;
@@ -85,6 +101,7 @@ nav .navbar {
   font-weight: 500;
   align-items: center;
   color: #444444;
+  position: relative;
 }
 
 .bx {
@@ -102,6 +119,144 @@ nav .navbar {
   width: 19px;
 }
 
+.signInForm {
+  position: absolute;
+  top: 56.5%;
+  right: 10%;
+  background: rgba(255, 255, 255, 0.95);
+  box-shadow: 0 2px 4px 0 rgb(0 0 0 / 25%);
+  padding: 20px;
+  width: 350px;
+  height: fit-content;
+  z-index: 2000;
+}
+
+.hide {
+  display: none;
+}
+
+#sign_in > label {
+  font-size: 12px;
+  color: #5c5c5c;
+  font-weight: 500;
+}
+#sign_in > label + a {
+  position: absolute;
+  right: 20px;
+  font-size: 12px;
+}
+#sign_in > input {
+  width: 100%;
+  outline: none;
+  padding: 10px 0;
+  font-size: 16px;
+  border-radius: 4px;
+  border: 1px solid #bbb;
+  margin: 4px 0px 20px 0px;
+}
+
+#sign_in > p {
+  font-size: 12px;
+  margin-top: 4px;
+  font-weight: 500;
+}
+
+#sign_in > input[type="button"] {
+  background-color: #000;
+  color: #fff;
+  margin: 6px 0 4px 0;
+}
+
+#sign_in > input[type="button"]:hover {
+  background-color: #333;
+}
+
+/* search bar area styling  */
+#search_bar_area {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: fit-content;
+  padding: 40px;
+  background: #fff;
+  box-shadow: 0 2px 4px 0 rgb(0 0 0 / 25%);
+  z-index: 998;
+}
+
+#search_bar_area > .search_container {
+  width: 80%;
+  margin: auto;
+  display: flex;
+  flex-direction: column;
+  position: relative;
+}
+
+#search_bar_area > .search_container > input {
+  outline: none;
+  border: none;
+  border-bottom: 2px solid #888;
+  font-size: 20px;
+  font-family: "Noto Serif Display", serif;
+  margin-bottom: 10px;
+}
+#search_bar_area > .search_container > input + span {
+  position: absolute;
+  top: 0;
+  right: 0;
+  cursor: pointer;
+  font-size: 20px;
+}
+
+#search_bar_area > .search_container > p {
+  font-size: 14px;
+  margin-bottom: 20px;
+}
+
+#search_bar_area > .search_container > .search_links {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 20px;
+}
+
+#search_bar_area > .search_container > .search_links > div > h4 {
+  font-weight: 500;
+  font-size: 17px;
+  margin-bottom: 4px;
+}
+
+#search_bar_area > .search_container > .search_links > div > ul > li {
+  padding-top: 6px;
+}
+
+#search_bar_area > .search_container > .search_links > div > ul > li > a {
+  color: #414141;
+  font-size: 14px;
+}
+
+#search_bar_area > .search_container > .search_links > div > div {
+  display: flex;
+}
+
+#search_bar_area > .search_container > .search_links > div > div > .right > p {
+  font-size: 14px;
+  color: #222;
+  letter-spacing: 0.5px;
+  line-height: 1.5;
+  padding-left: 20px;
+  max-width: 180px;
+}
+#search_bar_area > .search_container > .search_links > div > div > .right > a {
+  color: #111;
+  text-decoration: underline;
+  padding-top: 6px;
+  padding-left: 20px;
+  font-weight: 500;
+}
+#search_bar_area > .search_container > .search_links > div > div > img {
+  max-width: 180px;
+  max-height: 140px;
+}
 /* secondary nav styling  */
 
 .secondary_nav {
@@ -265,18 +420,39 @@ main > a {
   overflow: hidden;
   background-color: rgb(249, 246, 244);
   user-select: none;
+  position: relative;
 }
+
+.left_button,
+.right_button {
+  font-size: 30px;
+  opacity: 0.5;
+  background-color: #dcdcdc;
+  position: absolute;
+  padding: 5px 15px;
+}
+
+.left_button {
+  top: 50%;
+  left: 20px;
+  display: none;
+}
+.right_button {
+  top: 50%;
+  right: 20px;
+}
+
 .carousel .carousel_items {
   width: 100%;
   display: grid;
   grid-auto-flow: column;
   grid-auto-columns: 25%;
   overflow-y: hidden;
-  overflow-x: auto;
+  overflow-x: scroll;
 }
 
 .carousel .carousel_items::-webkit-scrollbar {
-  height: 5px;
+  height: 4px;
 }
 
 .carousel .carousel_items::-webkit-scrollbar-thumb {
@@ -458,6 +634,7 @@ h1 + a {
   margin: auto;
   overflow: hidden;
   user-select: none;
+  position: relative;
 }
 .grid_carousel .grid_carousel_items {
   width: 100%;
@@ -515,7 +692,7 @@ h1 + a {
 }
 
 .grid_carousel .grid_carousel_items::-webkit-scrollbar {
-  height: 5px;
+  height: 4px;
 }
 
 .grid_carousel .grid_carousel_items::-webkit-scrollbar-thumb {
@@ -587,7 +764,7 @@ section + h4 {
   display: flex;
   justify-content: space-around;
   width: 80%;
-  padding: 40px;
+  padding: 20px;
   margin: auto;
 }
 

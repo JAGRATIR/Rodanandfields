@@ -60,3 +60,81 @@ window.addEventListener("scroll",function(){
     }
     lastScrollTop=scrollTop;
 })
+
+
+// Carousel scroll on clicking buttons
+var left_button = document.querySelector(".carousel>.left_button");
+var right_button = document.querySelector(".carousel>.right_button");
+var container = document.querySelector('.carousel>.carousel_items');
+
+left_button.addEventListener("click",trigger_left);
+right_button.addEventListener("click",trigger_right);
+
+function trigger_left(){
+  container.scrollBy({
+    top: 0,
+    left: -600,
+    behavior: 'smooth'
+  });
+  if(container.scrollLeft<500){
+    left_button.style.display="none";
+  }
+
+}
+
+function trigger_right(){
+  container.scrollBy({
+    top: 0,
+    left: +600,
+    behavior: 'smooth'
+  });
+  if(container.scrollLeft>500){
+    left_button.style.display="block";
+  }
+}
+
+// 2nd Carousel scroll on clicking buttons
+var left_button1 = document.querySelector(".grid_carousel>.left_button");
+var right_button1 = document.querySelector(".grid_carousel>.right_button");
+var container1 = document.querySelector('.grid_carousel>.grid_carousel_items');
+
+left_button1.addEventListener("click",trigger_left1);
+right_button1.addEventListener("click",trigger_right1);
+
+function trigger_left1(){
+  container1.scrollBy({
+    top: 0,
+    left: -720,
+    behavior: 'smooth'
+  });
+  if(container1.scrollLeft<800){
+    left_button1.style.display="none";
+  }
+console.log(container1.scrollLeft)
+}
+
+function trigger_right1(){
+  container1.scrollBy({
+    top: 0,
+    left: +720,
+    behavior: 'smooth'
+  });
+  if(container1.scrollLeft<100){
+    left_button1.style.display="block";
+  }
+console.log(container1.scrollLeft)
+
+}
+
+
+// signin form toggle 
+
+var signin_btn = document.querySelector(".sign_in");
+
+signin_btn.addEventListener("click",toggle_form);
+
+
+function toggle_form(){
+  var form = document.querySelector(".signInForm");
+  form.classList.toggle("hide");
+}
