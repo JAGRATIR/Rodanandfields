@@ -138,3 +138,47 @@ function toggle_form(){
   var form = document.querySelector(".signInForm");
   form.classList.toggle("hide");
 }
+
+
+// search box 
+var search_btn = document.querySelector(".search");
+search_btn.addEventListener("click",toggle_search);
+var close = document.querySelector(".search_bar_area > .search_container > input + span");
+close.addEventListener("click",closeSearch);
+
+function toggle_search(){
+  var search_box = document.querySelector(".search_bar_area");
+  var overlay = document.querySelector("#overlay");
+  search_box.classList.remove("hide");
+  overlay.classList.add("body__overlay");
+  document.body.classList.add("no_scroll");
+}
+
+function closeSearch(){
+  var search_box = document.querySelector(".search_bar_area");
+  var overlay = document.querySelector("#overlay");
+  search_box.classList.add("hide");
+  overlay.classList.remove("body__overlay");
+  document.body.classList.remove("no_scroll");
+}
+
+
+var cart_btn = document.querySelector(".cart");
+cart_btn.addEventListener("click",toggle_cart);
+var close_cart_btn= document.querySelector(".cart_area > .cart_box > .cart_nav>p");
+close_cart_btn.addEventListener("click",close_cart);
+
+function toggle_cart(){
+  var cart_area = document.querySelector(".cart_area");
+  cart_area.classList.add("cart_active");
+  overlay.classList.add("body__overlay");
+  document.body.classList.add("no_scroll");
+}
+
+function close_cart(){
+  var cart_area = document.querySelector(".cart_area");
+  cart_area.classList.remove("cart_active");
+  overlay.classList.remove("body__overlay");
+  document.body.classList.remove("no_scroll");
+
+}

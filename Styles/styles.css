@@ -56,6 +56,10 @@ body {
   position: fixed;
 }
 
+.no_scroll {
+  overflow-y: hidden;
+}
+
 /* primary nav styling  */
 nav {
   position: fixed;
@@ -172,7 +176,7 @@ nav .navbar {
 }
 
 /* search bar area styling  */
-#search_bar_area {
+.search_bar_area {
   position: absolute;
   top: 0;
   left: 0;
@@ -184,7 +188,7 @@ nav .navbar {
   z-index: 998;
 }
 
-#search_bar_area > .search_container {
+.search_bar_area > .search_container {
   width: 80%;
   margin: auto;
   display: flex;
@@ -192,7 +196,7 @@ nav .navbar {
   position: relative;
 }
 
-#search_bar_area > .search_container > input {
+.search_bar_area > .search_container > input {
   outline: none;
   border: none;
   border-bottom: 2px solid #888;
@@ -200,7 +204,7 @@ nav .navbar {
   font-family: "Noto Serif Display", serif;
   margin-bottom: 10px;
 }
-#search_bar_area > .search_container > input + span {
+.search_bar_area > .search_container > input + span {
   position: absolute;
   top: 0;
   right: 0;
@@ -208,37 +212,37 @@ nav .navbar {
   font-size: 20px;
 }
 
-#search_bar_area > .search_container > p {
+.search_bar_area > .search_container > p {
   font-size: 14px;
   margin-bottom: 20px;
 }
 
-#search_bar_area > .search_container > .search_links {
+.search_bar_area > .search_container > .search_links {
   display: flex;
   justify-content: space-between;
   margin-top: 20px;
 }
 
-#search_bar_area > .search_container > .search_links > div > h4 {
+.search_bar_area > .search_container > .search_links > div > h4 {
   font-weight: 500;
   font-size: 17px;
   margin-bottom: 4px;
 }
 
-#search_bar_area > .search_container > .search_links > div > ul > li {
+.search_bar_area > .search_container > .search_links > div > ul > li {
   padding-top: 6px;
 }
 
-#search_bar_area > .search_container > .search_links > div > ul > li > a {
+.search_bar_area > .search_container > .search_links > div > ul > li > a {
   color: #414141;
   font-size: 14px;
 }
 
-#search_bar_area > .search_container > .search_links > div > div {
+.search_bar_area > .search_container > .search_links > div > div {
   display: flex;
 }
 
-#search_bar_area > .search_container > .search_links > div > div > .right > p {
+.search_bar_area > .search_container > .search_links > div > div > .right > p {
   font-size: 14px;
   color: #222;
   letter-spacing: 0.5px;
@@ -246,16 +250,94 @@ nav .navbar {
   padding-left: 20px;
   max-width: 180px;
 }
-#search_bar_area > .search_container > .search_links > div > div > .right > a {
+.search_bar_area > .search_container > .search_links > div > div > .right > a {
   color: #111;
   text-decoration: underline;
   padding-top: 6px;
   padding-left: 20px;
   font-weight: 500;
 }
-#search_bar_area > .search_container > .search_links > div > div > img {
+.search_bar_area > .search_container > .search_links > div > div > img {
   max-width: 180px;
   max-height: 140px;
+}
+
+/* cart area styling  */
+.cart_area {
+  position: absolute;
+  top: 0;
+  right: -100%;
+  height: 100vh;
+  width: 350px;
+  background-color: #fff;
+  box-shadow: 0 2px 4px 0 rgb(0 0 0 / 50%);
+  transition: 0.5s ease;
+  z-index: 997;
+}
+
+.cart_active {
+  right: 0;
+}
+
+.cart_area > .cart_box {
+  height: 100%;
+  position: relative;
+}
+
+.cart_area > .cart_box > .cart_nav {
+  width: 100%;
+  display: flex;
+  padding: 10px 20px;
+  justify-content: space-between;
+  border-bottom: 1px solid #bbb;
+}
+.cart_area > .cart_box > .cart_nav > p {
+  font-size: 24px;
+  cursor: pointer;
+}
+
+.cart_area > .cart_box > .cart_footer {
+  position: absolute;
+  bottom: 20px;
+  width: 100%;
+  height: fit-content;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.cart_area > .cart_box > .cart_footer > p {
+  background-color: rgb(223, 223, 223);
+  padding: 2px 15px;
+  font-size: 12px;
+  margin-bottom: 20px;
+  width: 100%;
+  text-align: center;
+}
+
+.cart_area > .cart_box > .cart_footer > div {
+  display: flex;
+  width: 100%;
+  padding: 4px 20px;
+  justify-content: space-between;
+}
+
+.cart_area > .cart_box > .cart_footer > div > h3 {
+  font-size: 16px;
+  padding-bottom: 10px;
+}
+.cart_area > .cart_box > .cart_footer > .cart_btn {
+  background-color: #000;
+  color: #fff;
+  padding: 10px 65px;
+  outline: none;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.cart_area > .cart_box > .cart_footer > .cart_btn:hover {
+  background-color: #333;
 }
 /* secondary nav styling  */
 
