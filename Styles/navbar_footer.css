@@ -176,6 +176,14 @@ nav .navbar {
   border: 1px solid #bbb;
   margin: 4px 0px 20px 0px;
 }
+#sign_in > div {
+  padding: 10px 0px;
+  color: red;
+}
+
+#sign_in > input[type="password"] {
+  font-size: 20px;
+}
 
 #sign_in > p {
   font-size: 12px;
@@ -183,7 +191,7 @@ nav .navbar {
   font-weight: 500;
 }
 
-#sign_in > input[type="button"] {
+#sign_in > input[type="submit"] {
   background-color: #000;
   color: #fff;
   margin: 6px 0 4px 0;

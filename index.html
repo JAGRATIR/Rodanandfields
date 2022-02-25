@@ -83,14 +83,16 @@
             <form id="sign_in">
               <label for="email">Email</label> <br />
               <input type="email" id="email" /> <br />
+              <div class="user_required"></div>
               <label for="password">Password</label>
               <a href="#">Forgot Password?</a> <br />
               <input type="password" id="password" />
+              <div class="pass_required"></div>
               <p>
                 This site is protected by reCAPTCHA and the Google Privacy
                 Policy and Terms of Service apply.
               </p>
-              <input class="form_btn" type="button" value="Sign In" />
+              <input class="form_btn" type="submit" value="Sign In" />
             </form>
           </div>
           <div class="cart"><i class="bx bx-shopping-bag"></i></div>
@@ -560,5 +562,6 @@
     <script src="/All Products Script/products.js"></script>
     <script src="./Script/index.js"></script>
     <script src="./Script/search.js"></script>
+    <script src="./Script/sign_in.js"></script>
   </body>
 </html>

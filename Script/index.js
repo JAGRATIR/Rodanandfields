@@ -141,8 +141,14 @@ function toggle_form(){
 
 
 // search box 
-var search_btn = document.querySelector(".search");
-search_btn.addEventListener("click",toggle_search);
+var search_btn = document.querySelectorAll(".search");
+var cart_btn = document.querySelectorAll(".cart");
+
+for(var i=0;i<search_btn.length;i++){
+  search_btn[i].addEventListener("click",toggle_search);
+  cart_btn[i].addEventListener("click",toggle_cart);
+
+}
 var close = document.querySelector(".search_bar_area > .search_container > input + span");
 close.addEventListener("click",closeSearch);
 
@@ -163,8 +169,6 @@ function closeSearch(){
 }
 
 
-var cart_btn = document.querySelector(".cart");
-cart_btn.addEventListener("click",toggle_cart);
 var close_cart_btn= document.querySelector(".cart_area > .cart_box > .cart_nav>p");
 close_cart_btn.addEventListener("click",close_cart);
 
