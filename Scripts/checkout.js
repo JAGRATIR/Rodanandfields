@@ -4,20 +4,31 @@ var capital=document.querySelector("#capital");
 var lower=document.querySelector("#lower");
 var number=document.querySelector("#number");
 var specialchar=document.querySelector("#specialchar");
-console.log("hello");
 
-input1.onfocus = function(){
+//Toggle Password
+var togglepwd=document.querySelector("#togglepwd");
+var pwd=document.querySelector("#pwwd");
+
+togglepwd.addEventListener("click",function(){
+    var type=pwd.getAttribute("type")==="password"?"text":"password";
+    pwd.setAttribute("type",type);
+
+    //toggle i tag's class
+    this.classList.toggle("fa-eye");
+});
+
+input1.onfocus=function(){
     document.querySelector("#msg").style.display="flex";
-}
-input1.onblur =  function(){
+} ;
+input1.onblur=function(){
     document.querySelector("#msg").style.display="none";
-}
+};
 
 input1.addEventListener('keyup', myScript);
 function myScript(event){
 
     event.preventDefault();
-    console("hello");
+    // console("hello");
     //upperCase validation
     var upperCase = /[A-Z]/g;
     console.log(input1.value.match(upperCase));

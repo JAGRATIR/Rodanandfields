@@ -1,6 +1,8 @@
+@import url('https://fonts.googleapis.com/css2?family=Bodoni+Moda&family=Montserrat:wght@400;600;700&family=Noto+Serif+Display&display=swap');
 /* @import url("https://fonts.googleapis.com/css2?family=Gothic+A1:wght@300;400;500&family=Nanum+Gothic&family=Noto+Serif+Display:wght@300;400;500&display=swap"); */
 *{
-    font-family:"Gothic A1", sans-serif;
+    /* font-family:"Gothic A1", sans-serif; */
+    font-family: "Montserrat", sans-serif;
 }
 .navbar {
     width: 100%;
@@ -11,30 +13,63 @@
     margin-left:0px;
     border-bottom: 1px solid #111;
   } 
+  table, th, td {
+    border: 1px solid black;
+    border-collapse: collapse;
+  }
+  h1{
+    font-family: 'Bodoni Moda', serif;
+    font-size: 25px;
+    font-weight: lighter;
+  }
   #lower_div{
       display:flex;
       justify-content: space-around;
-      border: 1px solid red;
-      height:500px;
+      /* border: 1px solid red; */
+      height:auto;
       /* width:300px; */
       margin-top:30px;
       
   }
   input[type]{
       width: 100%;
+      margin-bottom: 30px;
+      margin-top: 12px;
+      height: 30px;
   }
-  input[type=email]:focus{
-        border:1px solid red;
+  input:focus{
+        border-color: red;
   }
+  
+  label{
+      font-size: 14px;
+      font-family:"Gothic A1", sans-serif;
+      color:#3F3F3F;
+     
+  }
+  i{
 
+      /* position: absolute; */
+      margin-left: -30px;
+      cursor: pointer;
+  }
+  .pwdicon{
+    width: 100%;
+    
+  }
   #msg {
-      display:flex;
+      display:none;
       position:relative;
       
   }
   #msg p{
       padding:10px 35px;
       font-size:12px;
+  }
+
+  #name{
+      display: flex;
+      justify-content: space-between;
   }
 
   .valid{
@@ -59,11 +94,16 @@
   }
  #lower_div > div:last-child{
 
-        /* border:1px solid #111; */
+        border:1px solid #111;
         margin-left: 100px; 
         width: 500px;
+        height: auto;
 }
 
+#place{
+    display: flex;
+    justify-content: space-between;
+}
 #contId{
     background-color: black;
     color: white;
@@ -76,4 +116,12 @@
 #orderid{
     display: flex;
     justify-content: space-between;
+    border: 1px transparent;
+    background-color:#f7f4f2;
+}
+#edit{
+    color:#006EB3;
+    margin-right: 20px;
+    margin-top: 10px;
+    font-weight: lighter;
 }
