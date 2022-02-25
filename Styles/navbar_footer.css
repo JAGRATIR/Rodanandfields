@@ -154,7 +154,7 @@ nav .navbar {
 }
 
 .hide {
-  display: none;
+  display: none !important;
 }
 
 #sign_in > label {
@@ -329,11 +329,12 @@ nav .navbar {
   top: 0;
   right: -150%;
   height: 100vh;
-  width: 400px;
+  width: 390px;
   background-color: #fff;
   box-shadow: 0 2px 4px 0 rgb(0 0 0 / 50%);
   transition: 0.5s ease;
   z-index: 997;
+  overflow: auto;
 }
 
 .cart_active {
@@ -375,15 +376,54 @@ nav .navbar {
   padding-bottom: 10px;
 }
 
+.cart_area > .cart_box > .cart_items {
+  width: 90%;
+  margin: auto;
+  display: grid;
+  grid-template-columns: repeat(1, 1fr);
+  grid-template-rows: auto;
+  gap: 20px;
+  padding: 10px;
+}
+
+.cart_area > .cart_box > .cart_items > div {
+  display: flex;
+  width: 100%;
+  align-items: center;
+  border-bottom: 1px solid #bbb;
+}
+
+.cart_area > .cart_box > .cart_items > div > img {
+  width: 35%;
+}
+
+.cart_area > .cart_box > .cart_items > div > .desc {
+  font-size: 16px;
+  color: #222;
+}
+.cart_area > .cart_box > .cart_items > div > .desc > h4 {
+  font-weight: 500;
+}
+.cart_area > .cart_box > .cart_items > div > .desc > .price {
+  display: flex;
+  justify-content: space-between;
+  padding: 10px 0px;
+}
+
+.cart_area > .cart_box > .cart_items > div > .desc > .price > h4:nth-child(1) {
+  color: #888;
+  font-weight: 500;
+}
+
 .cart_area > .cart_box > .cart_footer {
-  position: absolute;
-  display: none !important;
+  position: relative;
   bottom: 20px;
   width: 100%;
   height: fit-content;
-  display: flex;
+  display: none;
   flex-direction: column;
   align-items: center;
+  padding: 20px 0px;
 }
 
 .cart_area > .cart_box > .cart_footer > p {

@@ -20,11 +20,24 @@ bestArr.map(function(elem){
     var button = document.createElement("button");
     button.innerText="Add To Bag";
     button.className="btn";
+    button.addEventListener("click", function () {
+      addToCart(elem);
+    });
 
     div.append(img,span,h4,p1,h3,p2,button);
     document.querySelector(".carousel_items").append(div);
 })
 
+
+//Add to cart
+var CartList= JSON.parse(localStorage.getItem("CartList"))||[];
+
+function addToCart(elem) {
+  CartList.push(elem);
+  localStorage.setItem("CartList",JSON.stringify(CartList));
+  display_data(CartList);
+  show_total();
+}
 
 // scroll to top button 
 var mybutton = document.querySelector(".scroll-up-btn");
