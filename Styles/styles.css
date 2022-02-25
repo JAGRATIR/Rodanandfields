@@ -1,11 +1,11 @@
-@import url("https://fonts.googleapis.com/css2?family=Gothic+A1:wght@300;400;500&family=Nanum+Gothic&family=Noto+Serif+Display:wght@300;400;500&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Bodoni+Moda:wght@400;500&family=Montserrat:wght@400;500&display=swap");
 * {
   padding: 0;
   margin: 0;
   box-sizing: border-box;
   text-decoration: none;
   list-style: none;
-  font-family: "Gothic A1", sans-serif;
+  font-family: "Montserrat", sans-serif;
 }
 
 html,
@@ -83,15 +83,16 @@ nav .navbar {
 .navbar > h4 {
   font-size: 12px;
   color: #272829;
-  font-family: "Nanum Gothic", sans-serif;
-  letter-spacing: 3px;
+  font-family: "Montserrat", sans-serif;
+  letter-spacing: 2px;
   cursor: pointer;
+  font-weight: 500;
 }
 
 .links {
   display: flex;
-  font-size: 13px;
-  font-weight: 600;
+  font-size: 12px;
+  font-weight: 500;
   align-items: center;
 }
 .links > div {
@@ -203,8 +204,9 @@ nav .navbar {
   border: none;
   border-bottom: 2px solid #888;
   font-size: 20px;
-  font-family: "Noto Serif Display", serif;
+  font-family: "Bodoni Moda", serif;
   margin-bottom: 10px;
+  text-transform: uppercase;
 }
 .search_bar_area > .search_container > input + span {
   position: absolute;
@@ -340,7 +342,7 @@ nav .navbar {
 
 .cart_area > .cart_box > .cart_mid > h3 {
   padding-bottom: 10px;
-  font-family: "Noto Serif Display", serif;
+  font-family: "Bodoni Moda", serif;
   font-size: 28px;
   font-weight: 600;
 }
@@ -405,7 +407,7 @@ nav .navbar {
 
 .secondary_nav > div {
   padding: 22px 20px;
-  font-size: 13px;
+  font-size: 12px;
   font-weight: 500;
   letter-spacing: 1px;
 }
@@ -462,7 +464,7 @@ nav .navbar {
   width: 0%;
   height: 4px;
   background-color: rgb(11, 180, 223);
-  bottom: -200%;
+  bottom: -150%;
   left: 0;
   transition: width 0.2s linear;
 }
@@ -497,16 +499,16 @@ main .container .left .inner {
 }
 
 .inner > h1 {
-  font-family: "Noto Serif Display", serif;
+  font-family: "Bodoni Moda", serif;
   font-weight: 400;
-  font-size: 38px;
+  font-size: 34px;
   margin-bottom: 30px;
 }
 
 .inner > h1 + p {
   font-weight: 500;
   line-height: 1.5;
-  font-family: "Nanum Gothic", sans-serif;
+  font-family: "Montserrat", sans-serif;
   margin-bottom: 20px;
 }
 
@@ -518,9 +520,9 @@ main .container .left .inner {
   text-decoration: underline;
   color: #222;
 }
-.right > img {
+/* .right > img {
   width: 100%;
-}
+} */
 
 .btn {
   margin-top: 30px;
@@ -533,6 +535,7 @@ main .container .left .inner {
   border-radius: 4px;
   border: solid 1px #222;
   background-color: #fff;
+  cursor: pointer;
 }
 .btn:active {
   box-shadow: 0 0 5px 2px #80aec9, 0 0 5px 0 rgb(0 0 0 / 50%) inset;
@@ -621,7 +624,7 @@ main > a {
 }
 
 .carousel .carousel_items > div > h1 {
-  font-family: "Noto Serif Display", serif;
+  font-family: "Bodoni Moda", serif;
   font-weight: 400;
   font-size: 38px;
 }
@@ -705,7 +708,7 @@ h1 + a {
 
 .all_products > h1,
 .all_products > h1 > i {
-  font-family: "Noto Serif Display", serif;
+  font-family: "Bodoni Moda", serif;
   font-weight: 400;
   font-size: 38px;
   padding-bottom: 20px;
@@ -810,7 +813,7 @@ h1 + a {
 }
 
 .item > .left_item > h2 {
-  font-family: "Noto Serif Display", serif;
+  font-family: "Bodoni Moda", serif;
   font-weight: 400;
   font-size: 38px;
 }
@@ -858,7 +861,7 @@ h1 + a {
 }
 
 .medical > div > h3 {
-  font-family: "Noto Serif Display", serif;
+  font-family: "Bodoni Moda", serif;
   font-weight: 400;
   font-size: 22px;
   letter-spacing: 1px;
@@ -913,7 +916,7 @@ section + h4 {
 }
 
 .services > .inner > .left > h1 {
-  font-family: "Noto Serif Display", serif;
+  font-family: "Bodoni Moda", serif;
   font-weight: 400;
   font-size: 28px;
   width: 60%;
@@ -960,7 +963,7 @@ footer .primary > div > ul > li > a {
 }
 
 footer .primary > div > h3 {
-  font-family: "Noto Serif Display", serif;
+  font-family: "Bodoni Moda", serif;
   font-weight: 300;
   font-size: 24px;
   margin-bottom: 40px;
