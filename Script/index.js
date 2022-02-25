@@ -129,7 +129,7 @@ console.log(container1.scrollLeft)
 
 // signin form toggle 
 
-var signin_btn = document.querySelector(".sign_in");
+var signin_btn = document.querySelector(".links>.sign_in");
 
 signin_btn.addEventListener("click",toggle_form);
 
@@ -182,3 +182,35 @@ function close_cart(){
   document.body.classList.remove("no_scroll");
 
 }
+
+
+// for mobile navbar 
+var ham_btn = document.querySelector(".ham_menu");
+ham_btn.addEventListener("click",toggle_navmenu);
+
+var close_ham= document.querySelector(".nav_top>div:nth-child(2)");
+close_ham.addEventListener("click",function(){
+  var menu = document.querySelector(".mobile_menu");
+  menu.classList.remove("menu_active");
+  document.body.classList.remove("no_scroll");
+})
+
+function toggle_navmenu(){
+  var menu = document.querySelector(".mobile_menu");
+  menu.classList.add("menu_active");
+  document.body.classList.add("no_scroll");
+}
+
+
+
+
+
+
+
+
+  
+
+  
+
+
+
