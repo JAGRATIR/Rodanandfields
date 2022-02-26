@@ -1,104 +1,107 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="shortcut icon" type="image/x-icon" media="all" href="https://www.rodanandfields.com/en-us/_ui/responsive/theme-alpha/images/favicon.ico" />
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="shortcut icon"
+      type="image/x-icon"
+      media="all"
+      href="https://www.rodanandfields.com/en-us/_ui/responsive/theme-alpha/images/favicon.ico"
+    />
     <title>Treatments for All Skin Types | Rodan + Fields®</title>
-    <link rel="stylesheet" href="regimens.css">
+    <link rel="stylesheet" href="regimens.css" />
     <link
       rel="stylesheet"
       href="https://use.fontawesome.com/releases/v5.15.4/css/all.css"
       integrity="sha384-DyZ88mC6Up2uqS4h/KRgHuoeGwBcD4Ng9SiP4dIRy0EXTlnuz47vAwmeGwVChigm"
       crossorigin="anonymous"
     />
-</head>
+  </head>
 
-<style>
-    .hover
-    {
-        transform: scale(1);
-        transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  <style>
+    .hover {
+      transform: scale(1);
+      transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
     }
 
-    .hover:hover
-    {
-        transform: scale(1.1);
+    .hover:hover {
+      transform: scale(1.1);
     }
 
-    .hover:after
-    {
-        position: absolute;
-        top: 10%;
+    .hover:after {
+      position: absolute;
+      top: 10%;
     }
-</style>
-<body>
-
-
+  </style>
+  <body>
     <div id="title">
-
-        <h1 class="reg">REGIMENS</h1>
-        <p>Our multi-step skincare Regimens target your primary skin concern. They’re easy to use and take the guesswork out of skincare by delivering our Multi-Med Therapy approach — the right ingredients, in the right formulations in the right order — for visible results.</p>
-    
+      <h1 class="reg">REGIMENS</h1>
+      <p>
+        Our multi-step skincare Regimens target your primary skin concern.
+        They’re easy to use and take the guesswork out of skincare by delivering
+        our Multi-Med Therapy approach — the right ingredients, in the right
+        formulations in the right order — for visible results.
+      </p>
     </div>
 
-        <div id="prods">
+    <div id="prods"></div>
 
-        </div>
-    
-        <div id="nav">
-            <p style="color: rgb(207, 207, 207);"><</p>
-            <button>1</button>
-            <button onclick="location.href='regimens 2.html'" class="hover" style="background-color: rgb(240, 240, 240); border: none; color: gray;">2</button>
-            <p id="next" class="hover" style="color: rgb(46, 46, 46);">></p>
-        </div>
-
-</body>
+    <div id="nav">
+      <p style="color: rgb(207, 207, 207)"><</p>
+      <button>1</button>
+      <button
+        onclick="location.href='regimens 2.html'"
+        class="hover"
+        style="background-color: rgb(240, 240, 240); border: none; color: gray"
+      >
+        2
+      </button>
+      <p id="next" class="hover" style="color: rgb(46, 46, 46)">></p>
+    </div>
+  </body>
 </html>
 
 <script src="../All Products Script/products.js"></script>
 <script>
-    var regimens=JSON.parse(localStorage.getItem("allProducts"));
-    
-    regimens.map(function(ele, index)
-    {
-        if(ele.pearks==true  &&  index<25)
-        {
-            var div=document.createElement("div");
+  var regimens = JSON.parse(localStorage.getItem("allProducts"));
 
-            var img=document.createElement("img");
-            img.src=ele.img;
-            div.append(img);
+  regimens.map(function (ele, index) {
+    if (ele.pearks == true && index < 25) {
+      var div = document.createElement("div");
 
-            var name=document.createElement("h3");
-            name.innerText=ele.name;
-            div.append(name);
+      var img = document.createElement("img");
+      img.src = ele.img;
+      div.append(img);
 
-            var ammount=document.createElement("div");
-            var price=document.createElement("p");
-            price.innerText="$"+ele.price+".00";
-            ammount.append(price);
+      var name = document.createElement("h3");
+      name.innerText = ele.name;
+      div.append(name);
 
-            var pvalue=document.createElement("p");
-            pvalue.innerText=" | $"+ ele.pvalue+".00" + " With";
-            ammount.append(pvalue);
+      var ammount = document.createElement("div");
+      var price = document.createElement("p");
+      price.innerText = "$" + ele.price + ".00";
+      ammount.append(price);
 
-            var pc=document.createElement("h2");
-            pc.innerText="PC PEARKS"
-            ammount.append(pc);
-            div.append(ammount)
+      var pvalue = document.createElement("p");
+      pvalue.innerText = " | $" + ele.pvalue + ".00" + " With";
+      ammount.append(pvalue);
 
-            var button=document.createElement("button");
-            button.innerText="ADD TO BAG";
-            div.append(button);
+      var pc = document.createElement("h2");
+      pc.innerText = "PC PEARKS";
+      ammount.append(pc);
+      div.append(ammount);
 
-            document.querySelector("#prods").append(div);
-        }
-    })
+      var button = document.createElement("button");
+      button.innerText = "ADD TO BAG";
+      div.append(button);
 
-    document.getElementById("next").onclick=function()
-    {
-        location.href="regimens 2.html";
-    };
+      document.querySelector("#prods").append(div);
+    }
+  });
+
+  document.getElementById("next").onclick = function () {
+    location.href = "regimens 2.html";
+  };
 </script>
