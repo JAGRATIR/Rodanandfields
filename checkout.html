@@ -10,11 +10,11 @@
     <!-- <link rel="stylesheet" 
           href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
     /> -->
+    
     <link 
     rel="stylesheet" 
     href="https://use.fontawesome.com/releases/v5.15.4/css/all.css" 
     integrity="sha384-DyZ88mC6Up2uqS4h/KRgHuoeGwBcD4Ng9SiP4dIRy0EXTlnuz47vAwmeGwVChigm" crossorigin="anonymous"
-    referrerpolicy="no-referrer"
     />
     <!-- <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.13.0/css/all.css"/> -->
     <!-- <link rel="stylesheet" href="path/to/bootstrap/css/bootstrap.min.css">
@@ -54,11 +54,13 @@
                  <div class="pwdicon">
                     <label for="pwwd">Password</label>
                     <input type="password" id="pwwd" pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}" required/>
-                    <i class="fa-solid fa-eye-slash fa-lg" id="togglepwd"></i>
+                    <!-- <i class="fa-solid fa-eye-slash fa-lg" id="togglepwd"></i> -->
+                    <i class="fa fa-eye-slash" id="togglepwd"></i>
+                   
                  </div>
                 
-               
-            
+                 
+                
 
                 <div id="msg">
                     <p id="length" class="invalid">8-64 characters</p>
@@ -153,6 +155,60 @@
                    
                 <input type="submit" value="Save & Continue"/>
             </form>
+
+            <h1>Payment</h1>
+            <hr>
+            <form>
+                <label for="nameCC">Name on credit card</label><br>
+                <input type="text" id="nameCC" />
+
+                <label for="ccNum">Credit Card Number</label><br>
+                <input type="text" id="ccNum" />
+
+                <div id="secret">
+                    <div>
+                        <label for="exp">Expiration</label><br>
+                        <input type="text" id="exp" />
+                    </div>
+                    <div>
+                        <label for="cvv">CVV</label><br>
+                        <input type="text" id="cvv" />
+                    </div>
+                    
+
+                </div>
+
+                <form>
+                    <label>Billing Address</label>
+                    <fieldset>
+                        <div id="btn1">
+                        
+                            <input type="radio" class="radio" id="shipping" value="Same as Shipping Address" name="ship"/>
+                            
+                            
+                            
+                            <div>
+                                <label class="ship"> Same as Shipping Address </label>
+                            </div>
+                            
+                        </div>
+                        <hr>
+
+                            <label class="ship"> Same as Shipping Address</label>
+                            <input type="radio" class="radio" id="diffAdd" value="Use a different Billing Address" name="ship"/>
+                               
+                
+                        
+                    </fieldset>
+                    <input type="submit" value="Save & Continue"/>
+                   
+                </form>
+               
+               
+
+
+            </form>
+
             
         
         
@@ -163,32 +219,39 @@
                 <p>Order Summary</p>
                 <div onclick="window.location.href='cart.html'" id="edit">Edit</div>
             </div>
-            
-            <!-- <p>Where can we send your order receipt to?</p> <p>Where can we send your order receipt to?</p>
-            <p>Where can we send your order receipt to?</p>
-            <p>Where can we send your order receipt to?</p>
-            <p>Where can we send your order receipt to?</p>
-            <p>Where can we send your order receipt to?</p>
-            <p>Where can we send your order receipt to?</p>
-            <p>Where can we send your order receipt to?</p>
-            <p>Where can we send your order receipt to?</p>
-            <p>Where can we send your order receipt to?</p>
+            <div id="container">
 
-             <p>Where can we send your order receipt to?</p>
-             <p>Where can we send your order receipt to?</p>
-             <p>Where can we send your order receipt to?</p>
-             <p>Where can we send your order receipt to?</p>
-             <p>Where can we send your order receipt to?</p>
-             <p>Where can we send your order receipt to?</p>
-             <p>Where can we send your order receipt to?</p>
-             <p>Where can we send your order receipt to?</p> -->
+            </div>
 
+            <div id="lefttotal">
+                <div id="subtotal">
+                    <p>Subtotal</p>
+                    <p></p>
+                </div>
+                <div id="offer">
+                    <p>Offer Savings</p>
+                    <p>$17.50</p>
+                </div>
+                <div id="tax">
+                    <p>Estimated Tax</p>
+                    <p>--</p>
+                </div>
+                <div id="shipping">
+                    <p>Shipping</p>
+                    <p>--</p>
+                </div>
+            </div>
+            <hr>
+            <div>
+                <p>TOTAL</p>
+                <p>$</p>
+            </div>
+           
 
         </div>
 
     </div>
-        
-    
+
     
     
 </body>

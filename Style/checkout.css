@@ -96,21 +96,27 @@
 
         border:1px solid #111;
         margin-left: 100px; 
-        width: 500px;
+        width: 650px;
         height: auto;
 }
-
+#secret{
+    display: flex;
+    justify-content: space-between;
+}
 #place{
     display: flex;
     justify-content: space-between;
 }
-#contId{
+#contId,input[type="submit"]{
     background-color: black;
     color: white;
     width:100%;
     margin-top:30px;
-    height:30px;
-    font-size:20px;
+    height:40px;
+    font-size:22px;
+}
+input[type="submit"]:hover{
+        
 }
 
 #orderid{
@@ -119,9 +125,86 @@
     border: 1px transparent;
     background-color:#f7f4f2;
 }
+#orderid > p{
+    font-size:20px;
+    margin-left: 20px;
+}
 #edit{
     color:#006EB3;
     margin-right: 20px;
-    margin-top: 10px;
+    margin-top: 20px;
     font-weight: lighter;
+    font-size: 18px;
+    
 }
+
+.div1{
+    display: flex;
+    justify-content: left;
+    /* border: 1px solid green; */
+}
+.div4{
+    display: flex;
+    justify-content: space-between;
+}
+.div3{
+    width:60%;
+}
+.div3 >p:nth-child(2){
+    color:#006EB3;
+}
+.div2{
+    margin-left:20px;
+    /* border:1px solid red; */
+    width:25%;
+}
+.div2 >img{
+    width:90%;
+}
+#lefttotal{
+    line-height: 5px;
+}
+#subtotal {
+    display:flex;
+    justify-content: space-between;
+    width:90%;
+    margin:auto;
+}
+#offer{
+    display:flex;
+    justify-content: space-between;
+    width:90%;
+    margin:auto;
+    color:#006EB3;
+    font-weight: bold;
+}
+#tax{
+    display:flex;
+    justify-content: space-between;
+    width:90%;
+    margin:auto;
+}
+#shipping{
+    display:flex;
+    justify-content: space-between;
+    width:90%;
+    margin:auto;
+}
+
+#orderdiv>div:last-child{
+    display: flex;
+    justify-content: space-between;
+    margin:auto;
+    width:90%;
+    font-size: 20px;
+    font-weight: bold;
+}
+
+#btn1{
+    display: flex;
+    justify-content:flex-start;
+    
+    /* background-color: #006EB3;*/
+}
+
+
