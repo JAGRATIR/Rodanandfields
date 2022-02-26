@@ -5,9 +5,15 @@ function display_data(data){
     if(cartList.length!=0 || cartArr.length!=0){
         document.querySelector(".cart_mid").style.display="none";
         document.querySelector(".cart_area > .cart_box > .cart_footer").style.display="flex";
+        var checkOut= document.querySelector(".cart_footer>.cart_btn")
+        checkOut.addEventListener("click",redirect_to_checkOut);
+
+        function redirect_to_checkOut(){
+          window.location.href="../reviewbagandchkout.html";
+        }
       }
 
-      if(cartList.length<4 || cartArr.length<4){
+      if(cartList.length<4){
         document.querySelector(".cart_footer").style.position="absolute";
       }else{
         document.querySelector(".cart_footer").style.position="relative";
