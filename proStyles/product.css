@@ -1,0 +1,140 @@
+@import url("https://fonts.googleapis.com/css2?family=Bodoni+Moda&family=Montserrat:wght@400;600;700&family=Noto+Serif+Display&display=swap");
+#container {
+  display: flex;
+  gap: 100px;
+  margin-top: 150px;
+}
+#productarray {
+  width: 1200px;
+  height: auto;
+  background-color: rgb(255, 255, 255);
+
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+#child1 {
+  grid-area: a;
+}
+h5 {
+  font-family: Montserrat;
+  font-size: 12px;
+}
+hr {
+  border-top: 1px solid rgb(192, 182, 182);
+  margin-bottom: 15px;
+}
+
+#filter {
+  height: auto;
+  width: 300px;
+  padding-left: 100px;
+  background-color: rgb(255, 255, 255);
+}
+h6 {
+  font-family: sans-serif;
+  font-size: 10px;
+}
+
+#productlist label {
+  display: block;
+  font-family: "Montserrat";
+  font-size: 15px;
+  padding-bottom: 5px;
+  margin-top: 5px;
+}
+.multipleSelection {
+  width: auto;
+}
+
+.selectBox select {
+  width: 100%;
+  font-weight: bold;
+}
+#skinlist label {
+  display: block;
+  font-family: "Montserrat";
+  padding-bottom: 10px;
+  margin-top: 5px;
+  font-size: 15px;
+}
+#applicationarea label {
+  display: block;
+  font-family: "Montserrat";
+  padding-bottom: 5px;
+  margin-top: 5px;
+  font-size: 15px;
+}
+#productlinelist label {
+  display: block;
+  font-family: "Montserrat";
+  padding-bottom: 5px;
+  margin-top: 5px;
+  font-size: 15px;
+}
+details > summary::-webkit-details-marker {
+  display: none;
+}
+#downarrow {
+  width: 15px;
+  height: 15px;
+  margin-top: 10px;
+
+  rotate: 90deg;
+}
+
+#cat {
+  display: flex;
+  justify-content: space-between;
+  background-color: rgb(255, 255, 255);
+  cursor: pointer;
+}
+p {
+  font-family: Montserrat;
+  font-weight: bold;
+  font-size: 12px;
+  color: #222222;
+}
+#mainDiv > img {
+  height: 350px;
+  width: 320px;
+}
+#childdiv {
+  height: 200px;
+  width: 300px;
+  flex-wrap: wrap;
+}
+#rewDiv {
+  margin-top: -60px;
+  display: flex;
+}
+#ADDTOBAG {
+  width: 300px;
+  height: 40px;
+  background-color: #fff;
+  margin-top: 20px;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+#elemtitle {
+  color: gray;
+  margin-bottom: 10px;
+}
+#elemname {
+  font-size: 15px;
+  font-family: "Times New Roman", Times, serif;
+  color: #131212;
+  margin-bottom: 10px;
+}
+#elemdisc {
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 13px;
+  color: rgb(82, 72, 72);
+  margin-bottom: 10px;
+  font-weight: 500;
+}
+#elemstar::before {
+  content: "★★★★★";
+  padding-right: 10px;
+}
