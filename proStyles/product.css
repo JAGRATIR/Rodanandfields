@@ -4,14 +4,26 @@
    gap:100px;
     
 }
+#productarraycontainer {
+    width: 85%;
+}
 #productarray{
-    width:1200px;
+    width: 100%;
     height:auto;
     background-color: rgb(255, 255, 255);
     
     display:flex;
    justify-content: space-between;
     flex-wrap: wrap; 
+}
+
+#showMoreButton {
+    
+    padding: 20px 0;
+    cursor: pointer;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
 }
 #child1{
     grid-area: a;
@@ -31,7 +43,7 @@ hr{
 
 #filter{
     height:850px;
-    width: 300px;
+    width: 15%;
     padding-left:100px;
    background-color: rgb(255, 255, 255);
     

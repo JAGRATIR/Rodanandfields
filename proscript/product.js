@@ -66,11 +66,11 @@ var prodArr=JSON.parse(localStorage.getItem("allProducts"))
 
     let filteredProducts = prodArr;
 
-const populateProducts = () => {
+const populateProducts = (products) => {
     // console.log('here')cx
     document.querySelector("#productarray").innerHTML = ''
 
-    filteredProducts.map(function(elem){
+    products.map(function(elem){
     var mainDiv=document.createElement("div");
     var childDiv=document.createElement("div");
     var rewDiv=document.createElement("div");
@@ -141,11 +141,18 @@ const populateProducts = () => {
 })
 }
 
-populateProducts()
+populateProducts(filteredProducts.slice(0, 10));
+if(filteredProducts.length <= 10) {
+           
+    document.getElementById('showMoreButton').style.display = 'none';
+} else {
+    document.getElementById('showMoreButton').style.display = 'default';
+}
+let page = 1;
 let activeFilters = [];
-const myfunction = (filter) =>{
-    activeFilters = activeFilters.includes(filter) ? activeFilters.filter(f => f!== filter) : [...activeFilters, filter];
 
+const populateProductsWithFilters = () => {
+    
     if(activeFilters.length === 0){
         filteredProducts = prodArr;
     } else {
@@ -168,7 +175,22 @@ const myfunction = (filter) =>{
             return false;
         });
     }
-    populateProducts();
+    if(filteredProducts.length <= page*10) {
+        document.getElementById('showMoreButton').style.display = 'none';
+    } else {
+        document.getElementById('showMoreButton').style.display = 'block';
+    }
+    populateProducts(filteredProducts.slice(0, 10*page));
+}
+const myfunction = (filter) =>{
+    page = 1;
+    activeFilters = activeFilters.includes(filter) ? activeFilters.filter(f => f!== filter) : [...activeFilters, filter];
+    populateProductsWithFilters();
    }
  
+   const showMore = () => {
+       page++;
+       console.log('new page:', page, filteredProducts.length, page*10);
+       populateProductsWithFilters();
+   }
    
