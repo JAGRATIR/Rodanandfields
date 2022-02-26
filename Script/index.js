@@ -101,6 +101,7 @@ function redirect_to_allProducts(){
   window.location.href="../product.html";
 }
 
+
 // sticky navbar 
 var lastScrollTop = 0;
 var navbar = document.querySelector("nav");
