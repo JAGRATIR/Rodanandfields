@@ -171,6 +171,7 @@ function displayTotal()
 
 function myscript()
 {
+    
     var radiog=document.querySelector("input[name='days']:checked").value;
     console.log(radiog);
 
