@@ -32,7 +32,6 @@ hr {
   background-color: rgb(255, 255, 255);
 }
 h6 {
-  font-family: sans-serif;
   font-size: 10px;
 }
 
@@ -90,7 +89,6 @@ details > summary::-webkit-details-marker {
   cursor: pointer;
 }
 p {
-  font-family: Montserrat;
   font-weight: bold;
   font-size: 12px;
   color: #222222;
@@ -123,12 +121,10 @@ p {
 }
 #elemname {
   font-size: 15px;
-  font-family: "Times New Roman", Times, serif;
   color: #131212;
   margin-bottom: 10px;
 }
 #elemdisc {
-  font-family: Arial, Helvetica, sans-serif;
   font-size: 13px;
   color: rgb(82, 72, 72);
   margin-bottom: 10px;
