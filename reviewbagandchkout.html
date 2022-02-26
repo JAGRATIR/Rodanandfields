@@ -473,7 +473,7 @@
             CONTINUE SHOPPING
           </button>
           <button
-          onclick="window.location.href='./checkout.html'"
+
             type="submit"
             style="
               height: 40px;
@@ -635,7 +635,7 @@
       remove.addEventListener("click", function () {
         remove_the_item(elem);
       });
-      remove.innerText = "Delete";
+      remove.innerHTML = "<i class='bx bxs-trash-alt'> </i>";
       var price = document.createElement("h4");
       price.innerText = "$" + elem.price;
 
