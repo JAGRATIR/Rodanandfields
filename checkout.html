@@ -1,276 +1,275 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>RF Checkout|RodanAndFields Us Corp Site</title>
-    <link rel="stylesheet" href="./StyleCheckout/checkout.css"/>
-    <link rel="icon" href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAHcAAAB3CAMAAAAO5y+4AAAAZlBMVEX////u7u5YWFpTU1Xl5eZMTE5VVFpoaGr4+Pl5eXtXVlvx8fFQT1GysrL8/PxycXTBwcGioqPd3d2rq6toZ21MS1H///tDQ0WcnJ1dXV/Kyss9PT5iYmTR0dJAP0PY2NqNjY6CgoTEBk8oAAAC4UlEQVRoge2ZDZeqIBCGFQS9iEZ5ybL2Vv//T65gfgAmWtnuPWfe02kXAx5HGJjBIAx+RsAFLnCBC1zgAhe4wAUucP8/brKS8mlu8mcdbXbT3JRQilfQycfFjDH0duHSxy2lJCvodPHMq2glJR7upwRc4AIXuMBdyM3tyOChxmrObjzbXpuSu5ipW/bEOXk2LhG5HSVJau1uyYPWWWZvv058haXkrggpz192U1H+O1j3QshI41pl4eMiFeiMSSL7ngXnW4urQyS3LeIzudRQ05haxr2Zqyj0ryEqm+bzuM5t1xEqmcdl6TDkTtNCX6R+rqJSdkkdeeN2zeVGrbpAZ9rbcJ25P+Jifq5qMvc5ay51ua5nz7A3eIO9juZw8x/iBoFyLvrCc57HpdyajQLrJEdX6KeowPgwKLZchqtdp4cr9iiXbkxh5Zf4qI2Mu6sxRue+zrbjoi4LJHG6hKsdv88hEW5yuquqkJXGD93//FZPg7u9bRZ4xOeFXGZlo8cay/XGIEregJrue+614w7Sz6X2Skpl3f+9NSZ1v0eh99CwH7sC42tfivLBc263seMyLj1sa11Jw1WFQoSO8wtMhvO55x6Ku7aZnX5OcWm7EhfNo7yF926D4V/Hj1ouxc/70b3zgmA9Sk60MMYNWi6Kgv1+/wS3XzdEqcdXVh/mBpVyIozIIXdDszW5GowRk7dkfS4drs8X0oA3zmx5N5cyMjQtirle7Zk9yDXXjidf4KrhNPejaMP1diQz04UFx6a9+5ypUUL2GdkcLlenXKU5lFEstU5XI0wSp5Ntr6pFyif8N6iqSlTmE82DVAhRqc/X8GokhGlZnguth4vjBPdTAi5wgQtc4P4Kri//XQvry/c/Juf94PjB14si/veDWKfstP2q4yp9gjW4xBZcok3J/36QY2SfPr0uhHz2Jud4FTmxnj2v3COvtyj8pfMZuMAFLnCBC1zgAhe4wAXuhHbhj+gbdNNP/XrAozkAAAAASUVORK5CYII=" type="image/x-icon"/>
-    
-    <link 
-    rel="stylesheet" 
-    href="https://use.fontawesome.com/releases/v5.15.4/css/all.css" 
-    integrity="sha384-DyZ88mC6Up2uqS4h/KRgHuoeGwBcD4Ng9SiP4dIRy0EXTlnuz47vAwmeGwVChigm" crossorigin="anonymous"
-    />
-   
+    <link rel="stylesheet" href="./StyleCheckout/checkout.css" />
     <link
-    rel="stylesheet"
-    href="https://cdnjs.cloudflare.com/ajax/libs/boxicons/2.1.0/css/boxicons.min.css"
-    integrity="sha512-pVCM5+SN2+qwj36KonHToF2p1oIvoU3bsqxphdOIWMYmgr4ZqD3t5DjKvvetKhXGc/ZG5REYTT6ltKfExEei/Q=="
-    crossorigin="anonymous"
-    referrerpolicy="no-referrer"
-  />
-</head>
-<body>
+      rel="icon"
+      href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAHcAAAB3CAMAAAAO5y+4AAAAZlBMVEX////u7u5YWFpTU1Xl5eZMTE5VVFpoaGr4+Pl5eXtXVlvx8fFQT1GysrL8/PxycXTBwcGioqPd3d2rq6toZ21MS1H///tDQ0WcnJ1dXV/Kyss9PT5iYmTR0dJAP0PY2NqNjY6CgoTEBk8oAAAC4UlEQVRoge2ZDZeqIBCGFQS9iEZ5ybL2Vv//T65gfgAmWtnuPWfe02kXAx5HGJjBIAx+RsAFLnCBC1zgAhe4wAUucP8/brKS8mlu8mcdbXbT3JRQilfQycfFjDH0duHSxy2lJCvodPHMq2glJR7upwRc4AIXuMBdyM3tyOChxmrObjzbXpuSu5ipW/bEOXk2LhG5HSVJau1uyYPWWWZvv058haXkrggpz192U1H+O1j3QshI41pl4eMiFeiMSSL7ngXnW4urQyS3LeIzudRQ05haxr2Zqyj0ryEqm+bzuM5t1xEqmcdl6TDkTtNCX6R+rqJSdkkdeeN2zeVGrbpAZ9rbcJ25P+Jifq5qMvc5ay51ua5nz7A3eIO9juZw8x/iBoFyLvrCc57HpdyajQLrJEdX6KeowPgwKLZchqtdp4cr9iiXbkxh5Zf4qI2Mu6sxRue+zrbjoi4LJHG6hKsdv88hEW5yuquqkJXGD93//FZPg7u9bRZ4xOeFXGZlo8cay/XGIEregJrue+614w7Sz6X2Skpl3f+9NSZ1v0eh99CwH7sC42tfivLBc263seMyLj1sa11Jw1WFQoSO8wtMhvO55x6Ku7aZnX5OcWm7EhfNo7yF926D4V/Hj1ouxc/70b3zgmA9Sk60MMYNWi6Kgv1+/wS3XzdEqcdXVh/mBpVyIozIIXdDszW5GowRk7dkfS4drs8X0oA3zmx5N5cyMjQtirle7Zk9yDXXjidf4KrhNPejaMP1diQz04UFx6a9+5ypUUL2GdkcLlenXKU5lFEstU5XI0wSp5Ntr6pFyif8N6iqSlTmE82DVAhRqc/X8GokhGlZnguth4vjBPdTAi5wgQtc4P4Kri//XQvry/c/Juf94PjB14si/veDWKfstP2q4yp9gjW4xBZcok3J/36QY2SfPr0uhHz2Jud4FTmxnj2v3COvtyj8pfMZuMAFLnCBC1zgAhe4wAXuhHbhj+gbdNNP/XrAozkAAAAASUVORK5CYII="
+      type="image/x-icon"
+    />
+
+    <link
+      rel="stylesheet"
+      href="https://use.fontawesome.com/releases/v5.15.4/css/all.css"
+      integrity="sha384-DyZ88mC6Up2uqS4h/KRgHuoeGwBcD4Ng9SiP4dIRy0EXTlnuz47vAwmeGwVChigm"
+      crossorigin="anonymous"
+    />
+
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/boxicons/2.1.0/css/boxicons.min.css"
+      integrity="sha512-pVCM5+SN2+qwj36KonHToF2p1oIvoU3bsqxphdOIWMYmgr4ZqD3t5DjKvvetKhXGc/ZG5REYTT6ltKfExEei/Q=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+  </head>
+  <body>
     <nav>
-        <div class="navbar">
-            <a href="./index.html"
-              ><img
-                src="https://www.rodanandfields.com/en-us/medias/rf-logo.svg?context=bWFzdGVyfGltYWdlc3w3MzczfGltYWdlL3N2Zyt4bWx8aW1hZ2VzL2g2MC9oYWIvODgyMjE0NzE4NjcxOC5zdmd8YjNmMmU2YTg5MTM0NTMzM2Y2ODg2ZmRkZTJhNmY2OWZhYmYyYjk5NWQxODkxODFiYjVkY2MxY2NjOWRlMzA5OA"
-                alt="Rodan + Fields"
-            /></a>
-        </div>
+      <div class="navbar">
+        <a href="./index.html"
+          ><img
+            src="https://www.rodanandfields.com/en-us/medias/rf-logo.svg?context=bWFzdGVyfGltYWdlc3w3MzczfGltYWdlL3N2Zyt4bWx8aW1hZ2VzL2g2MC9oYWIvODgyMjE0NzE4NjcxOC5zdmd8YjNmMmU2YTg5MTM0NTMzM2Y2ODg2ZmRkZTJhNmY2OWZhYmYyYjk5NWQxODkxODFiYjVkY2MxY2NjOWRlMzA5OA"
+            alt="Rodan + Fields"
+        /></a>
+      </div>
     </nav>
     <div id="lower_div">
-        <div>
-            
-            <h1>Contact</h1>
-            <hr/>
-            <p>Where can we send your order receipt to?</p>
-            <form id="contact">
-                <label for="mail">Email</label><br>
-                <input id="mail" name="mail" type="email" autocomplete="name" required/><br>
-                
-                 <!-- pattern set -->
-                 
-                 
-                 <div class="pwdicon">
-                    <label for="pwwd">Password</label>
-                    <input type="password" id="pwwd" pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}" required/>
-                    <!-- <i class="fa-solid fa-eye-slash fa-lg" id="togglepwd"></i> -->
-                    <i class="fa fa-eye-slash" id="togglepwd"></i>
-                   
-                 </div>
-                
-                 
-                
+      <div>
+        <h1>Contact</h1>
+        <hr />
+        <p>Where can we send your order receipt to?</p>
+        <form id="contact">
+          <label for="mail">Email</label><br />
+          <input
+            id="mail"
+            name="mail"
+            type="email"
+            autocomplete="name"
+            required
+          /><br />
 
-                <div id="msg">
-                    <p id="length" class="invalid">8-64 characters</p>
-                    <p id="capital" class="invalid">ABC</p>
-                    <p id="lower" class="invalid">abc</p>
-                    <p id="number" class="invalid">123</p>
-                    <p id="specialchar" class="invalid">!$%</p>
+          <!-- pattern set -->
+
+          <div class="pwdicon">
+            <label for="pwwd">Password</label>
+            <input
+              type="password"
+              id="pwwd"
+              pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}"
+              required
+            />
+            <!-- <i class="fa-solid fa-eye-slash fa-lg" id="togglepwd"></i> -->
+            <i class="fa fa-eye-slash" id="togglepwd"></i>
+          </div>
+
+          <div id="msg">
+            <p id="length" class="invalid">8-64 characters</p>
+            <p id="capital" class="invalid">ABC</p>
+            <p id="lower" class="invalid">abc</p>
+            <p id="number" class="invalid">123</p>
+            <p id="specialchar" class="invalid">!$%</p>
+          </div>
+          <input type="submit" id="contId" value="Save & Continue" />
+        </form>
+
+        <h1>Shipping</h1>
+        <hr />
+        <form>
+          <div id="name">
+            <div>
+              <label for="firstN">First Name</label><br />
+              <input type="text" id="firstN" required />
+            </div>
+            <div>
+              <label for="LastN">Last Name</label><br />
+              <input type="text" id="LastN" required />
+            </div>
+          </div>
+          <label for="address">Address 1</label><br />
+          <input type="text" id="address" required />
+
+          <label for="address2">Address 2</label><br />
+          <input type="text" id="address2" />
+
+          <div id="place">
+            <div>
+              <label for="city">City</label><br />
+              <input type="text" id="city" required />
+            </div>
+            <div>
+              <label for="state">State</label><br />
+
+              <select name="state" id="state" required>
+                <option value="AL">AL</option>
+                <option value="AK">AK</option>
+                <option value="AZ">AZ</option>
+                <option value="AR">AR</option>
+                <option value="CA">CA</option>
+                <option value="CT">CT</option>
+                <option value="DE">DE</option>
+                <option value="DC">DC</option>
+                <option value="FL">FL</option>
+                <option value="GA">GA</option>
+                <option value="GU">GU</option>
+                <option value="HI">HI</option>
+                <option value="ID">ID</option>
+                <option value="IL">IL</option>
+                <option value="IN">IN</option>
+                <option value="IA">IA</option>
+                <option value="KS">KS</option>
+                <option value="KY">KY</option>
+                <option value="LA">LA</option>
+                <option value="ME">ME</option>
+                <option value="MD">MD</option>
+                <option value="MA">MA</option>
+                <option value="MI">MI</option>
+                <option value="NE">NE</option>
+                <option value="NV">NV</option>
+                <option value="OH">OH</option>
+                <option value="OK">OK</option>
+                <option value="PA">PA</option>
+              </select>
+            </div>
+            <div>
+              <label for="zipcode">Zip Code</label><br />
+              <input type="text" id="zipcode" required />
+            </div>
+          </div>
+
+          <label for="phoneno">Phone Number</label><br />
+          <input type="text" id="phoneno" maxlength="10" required />
+
+          <form id="gDays">
+            <fieldset>
+              <p>Select Shipping Method:</p>
+              <div id="g6">
+                <div>
+                  <input
+                    type="radio"
+                    id="twotosix"
+                    name="days"
+                    value="$5.95"
+                    required
+                  />
+                  <label for="twotosix">Ground(2-6 Business Days)</label><br />
                 </div>
-                <input type="submit" id="contId" value="Save & Continue"/>
-            </form>
+                <div>$5.95</div>
+              </div>
 
-
-            <h1>Shipping</h1>
-            <hr/>
-            <form>
-               
-                <div id="name">
-                    <div>
-                        <label for="firstN">First Name</label><br>
-                        <input type="text" id="firstN" required/>
-                    </div>
-                    <div>
-                        <label for="LastN">Last Name</label><br>
-                        <input type="text" id="LastN" required/>
-                    </div>
-                    
-
+              <div id="g2">
+                <div>
+                  <input type="radio" id="twodays" name="days" value="$15.00" />
+                  <label for="twodays">2 Business Days</label><br />
                 </div>
-                <label for="address">Address 1</label><br>
-                <input type="text" id="address" required/>
+                <div>$15.00</div>
+              </div>
 
-                <label for="address2">Address 2</label><br>
-                <input type="text" id="address2"/>
-
-                <div id="place">
-                    <div>
-                        <label for="city">City</label><br>
-                        <input type="text" id="city" required/>
-                    </div>
-                    <div>
-                        <label for="state">State</label><br>
-
-                        <select name="state" id="state" required>
-                            <option value="AL">AL</option>
-                            <option value="AK">AK</option>
-                            <option value="AZ">AZ</option>
-                            <option value="AR">AR</option>
-                            <option value="CA">CA</option>
-                            <option value="CT">CT</option>
-                            <option value="DE">DE</option>
-                            <option value="DC">DC</option>
-                            <option value="FL">FL</option>
-                            <option value="GA">GA</option>
-                            <option value="GU">GU</option>
-                            <option value="HI">HI</option>
-                            <option value="ID">ID</option>
-                            <option value="IL">IL</option>
-                            <option value="IN">IN</option>
-                            <option value="IA">IA</option>
-                            <option value="KS">KS</option>
-                            <option value="KY">KY</option>
-                            <option value="LA">LA</option>
-                            <option value="ME">ME</option>
-                            <option value="MD">MD</option>
-                            <option value="MA">MA</option>
-                            <option value="MI">MI</option>
-                            <option value="NE">NE</option>
-                            <option value="NV">NV</option>
-                            <option value="OH">OH</option>
-                            <option value="OK">OK</option>
-                            <option value="PA">PA</option>
-                        </select>
-                    </div>
-                    <div>
-                        <label for="zipcode">Zip Code</label><br>
-                        <input type="text" id="zipcode" required/>
-                    </div>
+              <div id="g1">
+                <div>
+                  <input type="radio" id="oneday" name="days" value="$25.00" />
+                  <label for="oneday">1 Business Day</label><br />
                 </div>
-                
+                <div>$25.00</div>
+              </div>
+            </fieldset>
 
-                <label for="phoneno">Phone Number</label><br>
-                <input type="text" id="phoneno" maxlength="10" required/>
-                
-                <form id="gDays">
-                    <fieldset>
-                        <p>Select Shipping Method:</p>
-                    <div id="g6">
-                        <div>
-                            <input type="radio" id="twotosix" name="days" value="$5.95" required/>
-                            <label for="twotosix" >Ground(2-6 Business Days)</label><br>
-                        </div>
-                        <div>
-                                $5.95
-                        </div>
-                    </div>
+            <input type="submit" onclick="myscript()" value="Save & Continue" />
+          </form>
+        </form>
 
-                    <div id="g2">
-                            <div>
-                                <input type="radio" id="twodays" name="days" value="$15.00"/>
-                                <label for="twodays">2 Business Days</label><br>
-                            </div>
-                            <div>
-                                $15.00
-                            </div>
-                    </div>
+        <h1>Payment</h1>
+        <hr />
+        <form id="pay">
+          <fieldset>
+            <label for="nameCC">Name on credit card</label><br />
+            <input type="text" id="nameCC" required />
 
-                    <div id="g1">
-                            <div>
-                                <input type="radio" id="oneday" name="days" value="$25.00"/>
-                                <label for="oneday">1 Business Day</label><br>
-                            </div>
-                            <div>
-                                $25.00
-                            </div>
-                    </div>  
-                    </fieldset>
-                    
-                    
-                    <input onclick="myscript()" value="Save & Continue"/>
-                          
-                    
-                   
-                </form>
-                   
-                
+            <label for="ccNum">Credit Card Number</label><br />
+            <input type="text" id="ccNum" required />
+
+            <div id="secret">
+              <div>
+                <label for="exp">Expiration</label><br />
+                <input type="text" id="exp" required />
+              </div>
+              <div>
+                <label for="cvv">CVV</label><br />
+                <input type="text" id="cvv" maxlength="3" required />
+              </div>
+            </div>
+
+            <form id="paymentComplete">
+              <label>Billing Address</label>
+              <fieldset>
+                <input
+                  type="radio"
+                  class="radio"
+                  id="shipping"
+                  value="Same as Shipping Address"
+                  name="ship"
+                  required
+                />
+                <label for="shipping"> Same as Shipping Address </label>
+                <hr />
+
+                <input
+                  type="radio"
+                  class="radio"
+                  id="diffAdd"
+                  value="Use a different Billing Address"
+                  name="ship"
+                />
+                <label for="diffAdd">Use a different Billing Address</label>
+              </fieldset>
+              <input
+                onclick="window.location.href='./order confirmed/order_confirmed.html'"
+                value="Save & Continue"
+              />
             </form>
-
-            <h1>Payment</h1>
-            <hr>
-            <form id="pay">
-                <fieldset>
-                
-                        <label for="nameCC">Name on credit card</label><br>
-                        <input type="text" id="nameCC" required/>
-
-                        <label for="ccNum">Credit Card Number</label><br>
-                        <input type="text" id="ccNum" required/>
-
-                        <div id="secret">
-                            <div>
-                                <label for="exp">Expiration</label><br>
-                                <input type="text" id="exp" required/>
-                            </div>
-                            <div>
-                                <label for="cvv">CVV</label><br>
-                                <input type="text" id="cvv" maxlength="3" required/>
-                            </div>
-                            
-
-                        </div>
-                
-
-                        <form id="paymentComplete">
-                            <label>Billing Address</label>
-                            <fieldset>
-                                    
-                                    <input type="radio" class="radio" id="shipping" value="Same as Shipping Address" name="ship" required/>
-                                    <label for="shipping"> Same as Shipping Address </label>
-                                    <hr>
-                                    
-                                    <input type="radio" class="radio" id="diffAdd" value="Use a different Billing Address" name="ship"/>
-                                    <label for="diffAdd">Use a different Billing Address</label> 
-                            </fieldset>
-                            <input onclick="window.location.href='./order confirmed/order_confirmed.html'" value="Save & Continue"/>
-                        </form>
-                </fieldset>
-               
-
-
-            </form>
-
-            
-        
-        
-           
+          </fieldset>
+        </form>
+      </div>
+      <div id="orderdiv">
+        <div id="orderid">
+          <p>Order Summary</p>
+          <div
+            onclick="window.location.href='./reviewbagandchkout.html'"
+            id="edit"
+          >
+            Edit
+          </div>
         </div>
-        <div id="orderdiv">
-            <div id="orderid">
-                <p>Order Summary</p>
-                <div onclick="window.location.href='./reviewbagandchkout.html'" id="edit">Edit</div>
-            </div>
-            <div id="container">
+        <div id="container"></div>
 
-            </div>
-
-            <div id="lefttotal">
-                <div id="subtotal">
-                    <p>Subtotal</p>
-                    <p></p>
-                </div>
-                <div id="offer">
-                    <p>Offer Savings</p>
-                    <p value="17.50">$17.50</p>
-                </div>
-                <div id="tax">
-                    <p>Estimated Tax</p>
-                    <p>--</p>
-                </div>
-                <div id="shiptotal">
-                    <p>Shipping</p>
-                    <p>--</p>
-                </div>
-            </div>
-            <hr>
-            <div id="finalTotal">
-                <p>TOTAL</p>
-                <p></p>
-            </div>
-           
-
+        <div id="lefttotal">
+          <div id="subtotal">
+            <p>Subtotal</p>
+            <p></p>
+          </div>
+          <div id="offer">
+            <p>Offer Savings</p>
+            <p value="17.50">$17.50</p>
+          </div>
+          <div id="tax">
+            <p>Estimated Tax</p>
+            <p>--</p>
+          </div>
+          <div id="shiptotal">
+            <p>Shipping</p>
+            <p>--</p>
+          </div>
         </div>
-
+        <hr />
+        <div id="finalTotal">
+          <p>TOTAL</p>
+          <p></p>
+        </div>
+      </div>
     </div>
-
-    
-    
-</body>
+  </body>
 </html>
 <script src="./ScriptCheckout/checkout.js"></script>
