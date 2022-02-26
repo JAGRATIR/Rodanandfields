@@ -1,0 +1,105 @@
+@import url('https://fonts.googleapis.com/css2?family=Bodoni+Moda&family=Montserrat:wght@100;200;300;400;600;700&family=Nanum+Gothic&family=Noto+Serif+Display&display=swap');
+
+h1
+{
+    font-family: 'Bodoni Moda', serif;
+    font-size: 30px;
+    font-weight: 400;
+    color: #222;
+    margin-bottom: 0px;
+    margin-bottom: 80px;
+}
+body
+{
+    font-family: "Montserrat", sans-serif;
+}
+.zoom-in-out-box
+{
+    width: 100px;
+    height: 100px;
+    fill: green;
+    animation: zoom-in-zoom-out 2s ease infinite;
+}
+@keyframes zoom-in-zoom-out
+{
+    0%
+    {
+      transform: scale(1, 1);
+    }
+    50%
+    {
+      transform: scale(1.1, 1.1);
+    }
+    100%
+    {
+      transform: scale(1, 1);
+    }
+  }
+#container
+{
+    width: 900px;
+    height: 500px;
+    background-color: rgb(225,225,225);
+    margin: auto;
+    text-align: center;
+    padding: 50px;
+}
+h2
+{
+    font-weight: 400;
+}
+
+button
+{
+    margin: auto;
+    margin-top: 10px;
+    width: 300px;
+    height: 55px;
+    background-color: #222;
+    border-radius: 5px;
+
+
+    word-spacing: 2px;
+    letter-spacing: 2px;
+    font-weight: 400;
+    font-size: 15px;
+    color: white;
+    border: transparent;
+    font-family: "Montserrat", sans-serif;
+}
+
+button:hover
+{
+    background-color: rgb(73, 73, 73);
+}
+
+@media all and (min-width: 800px) and (max-width:1000px)
+{
+    #container
+    {
+        width: 80%;
+        height: auto;
+    }
+}
+
+@media all and (min-width: 645px) and (max-width:799px)
+{
+    #container
+    {
+        width: 80%;
+        height: auto;
+    }
+}
+  
+@media all and (min-width: 50px) and (max-width:644px)
+{
+    #container
+    {
+        width: 80%;
+        height: auto;
+    }
+    button
+    {
+        width: 80%;
+    }
+}
