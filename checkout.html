@@ -80,17 +80,17 @@
                 <div id="name">
                     <div>
                         <label for="firstN">First Name</label><br>
-                        <input type="text" id="firstN"/>
+                        <input type="text" id="firstN" required/>
                     </div>
                     <div>
                         <label for="LastN">Last Name</label><br>
-                        <input type="text" id="LastN"/>
+                        <input type="text" id="LastN" required/>
                     </div>
                     
 
                 </div>
                 <label for="address">Address 1</label><br>
-                <input type="text" id="address"/>
+                <input type="text" id="address" required/>
 
                 <label for="address2">Address 2</label><br>
                 <input type="text" id="address2"/>
@@ -98,12 +98,12 @@
                 <div id="place">
                     <div>
                         <label for="city">City</label><br>
-                        <input type="text" id="city"/>
+                        <input type="text" id="city" required/>
                     </div>
                     <div>
                         <label for="state">State</label><br>
 
-                        <select name="state" id="state">
+                        <select name="state" id="state" required>
                             <option value="AL">AL</option>
                             <option value="AK">AK</option>
                             <option value="AZ">AZ</option>
@@ -136,74 +136,97 @@
                     </div>
                     <div>
                         <label for="zipcode">Zip Code</label><br>
-                        <input type="text" id="zipcode"/>
+                        <input type="text" id="zipcode" required/>
                     </div>
                 </div>
                 
 
                 <label for="phoneno">Phone Number</label><br>
-                <input type="text" id="phoneno"/>
+                <input type="text" id="phoneno" maxlength="10" required/>
                 
-                <form action="">
-                    <input type="radio" id="twotosix" />
-                     <label for="twotosix" >Ground(2-6 Business Days)</label><br>
-                     <input type="radio" id="twodays" />
-                     <label for="twodays">2 Business Days</label><br>
-                     <input type="radio" id="oneday" />
-                     <label for="oneday">1 Business Day</label><br>
+                <form id="gDays">
+                    <fieldset>
+                        <p>Select Shipping Method:</p>
+                    <div id="g6">
+                        <div>
+                            <input type="radio" id="twotosix" name="days" value="$5.95" required/>
+                            <label for="twotosix" >Ground(2-6 Business Days)</label><br>
+                        </div>
+                        <div>
+                                $5.95
+                        </div>
+                    </div>
+
+                    <div id="g2">
+                            <div>
+                                <input type="radio" id="twodays" name="days" value="$15.00"/>
+                                <label for="twodays">2 Business Days</label><br>
+                            </div>
+                            <div>
+                                $15.00
+                            </div>
+                    </div>
+
+                    <div id="g1">
+                            <div>
+                                <input type="radio" id="oneday" name="days" value="$25.00"/>
+                                <label for="oneday">1 Business Day</label><br>
+                            </div>
+                            <div>
+                                $25.00
+                            </div>
+                    </div>  
+                    </fieldset>
+                    
+                    
+                    <input onclick="myscript()" value="Save & Continue"/>
+                          
+                    
+                   
                 </form>
                    
-                <input type="submit" value="Save & Continue"/>
+                
             </form>
 
             <h1>Payment</h1>
             <hr>
-            <form>
-                <label for="nameCC">Name on credit card</label><br>
-                <input type="text" id="nameCC" />
+            <form id="pay">
+                <fieldset>
+                
+                        <label for="nameCC">Name on credit card</label><br>
+                        <input type="text" id="nameCC" required/>
 
-                <label for="ccNum">Credit Card Number</label><br>
-                <input type="text" id="ccNum" />
+                        <label for="ccNum">Credit Card Number</label><br>
+                        <input type="text" id="ccNum" required/>
 
-                <div id="secret">
-                    <div>
-                        <label for="exp">Expiration</label><br>
-                        <input type="text" id="exp" />
-                    </div>
-                    <div>
-                        <label for="cvv">CVV</label><br>
-                        <input type="text" id="cvv" />
-                    </div>
-                    
-
-                </div>
-
-                <form>
-                    <label>Billing Address</label>
-                    <fieldset>
-                        <div id="btn1">
-                        
-                            <input type="radio" class="radio" id="shipping" value="Same as Shipping Address" name="ship"/>
-                            
-                            
-                            
+                        <div id="secret">
                             <div>
-                                <label class="ship"> Same as Shipping Address </label>
+                                <label for="exp">Expiration</label><br>
+                                <input type="text" id="exp" required/>
+                            </div>
+                            <div>
+                                <label for="cvv">CVV</label><br>
+                                <input type="text" id="cvv" maxlength="3" required/>
                             </div>
                             
-                        </div>
-                        <hr>
 
-                            <label class="ship"> Same as Shipping Address</label>
-                            <input type="radio" class="radio" id="diffAdd" value="Use a different Billing Address" name="ship"/>
-                               
+                        </div>
                 
-                        
-                    </fieldset>
-                    <input type="submit" value="Save & Continue"/>
-                   
-                </form>
-               
+
+                        <form id="paymentComplete">
+                            <label>Billing Address</label>
+                            <fieldset>
+                                    
+                                    <input type="radio" class="radio" id="shipping" value="Same as Shipping Address" name="ship" required/>
+                                    <label for="shipping"> Same as Shipping Address </label>
+                                    <hr>
+                                    
+                                    <input type="radio" class="radio" id="diffAdd" value="Use a different Billing Address" name="ship"/>
+                                    <label for="diffAdd">Use a different Billing Address</label> 
+                            </fieldset>
+                            <input onclick="window.location.href='confirm.html'" value="Save & Continue"/>
+                        </form>
+                </fieldset>
                
 
 
@@ -230,21 +253,21 @@
                 </div>
                 <div id="offer">
                     <p>Offer Savings</p>
-                    <p>$17.50</p>
+                    <p value="17.50">$17.50</p>
                 </div>
                 <div id="tax">
                     <p>Estimated Tax</p>
                     <p>--</p>
                 </div>
-                <div id="shipping">
+                <div id="shiptotal">
                     <p>Shipping</p>
                     <p>--</p>
                 </div>
             </div>
             <hr>
-            <div>
+            <div id="finalTotal">
                 <p>TOTAL</p>
-                <p>$</p>
+                <p></p>
             </div>
            
 

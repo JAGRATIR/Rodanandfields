@@ -23,9 +23,6 @@ togglepwd.addEventListener("click",function(){
     else{
         togglepwd.setAttribute("class","fa fa-eye");
     }
-
-
-    // this.classList.toggle("fa-eye");
     
 });
 
@@ -40,9 +37,7 @@ input1.addEventListener('keyup', myScript);
 function myScript(event){
 
     event.preventDefault();
-    // console("hello");
-
-
+    
     //upperCase validation
     var upperCase = /[A-Z]/g;
     console.log(input1.value.match(upperCase));
@@ -165,4 +160,65 @@ function displayTotal()
     },0);
 
     document.querySelector("#subtotal>p:last-child").innerText="$"+total;
+    document.querySelector("#subtotal>p:last-child").value=total;
+}
+
+//Final Total
+
+function myscript()
+{
+    var radiog=document.querySelector("input[name='days']:checked").value;
+    console.log(radiog);
+
+    var tax=document.querySelector("#tax>p:last-child");
+
+    if(radiog==="$5.95")
+    {
+        var r1=document.querySelector("#shiptotal>p:last-child");
+        r1.innerText="$5.95";
+        r1.value="5.95"; 
+        
+        tax.innerText="$11.45";
+        tax.value="11.45";
+    }
+    else
+        if(radiog==="$15.00")
+        {
+            var r2=document.querySelector("#shiptotal>p:last-child");
+            r2.innerText="$15.00";
+            r2.value="15.00";   
+
+            tax.innerText="$12.05";
+            tax.value="12.05";
+        }
+        else
+            if(radiog==="$25.00")
+            {
+                var r3=document.querySelector("#shiptotal>p:last-child");
+                r3.innerText="$25.00";
+                r3.value="25.00"; 
+                
+                tax.innerText="$13.75";
+                tax.value="13.75";
+            }
+    
+    
+      var subtotal=+(document.querySelector("#subtotal>p:last-child").value);
+    //   console.log("----------subtotal",subtotal);
+
+      var offer=17.50;
+    //   console.log("-----------offer",offer);
+
+      var tax=+(document.querySelector("#tax>p:last-child").value);
+    //   console.log("----------tax",tax);
+
+      var shiptotal=+(document.querySelector("#shiptotal>p:last-child").value);
+    //   console.log("----------shiptotal",shiptotal);
+      
+      var finalTotal=subtotal+offer+tax+shiptotal;
+      document.querySelector("#finalTotal>p:last-child").innerText="$"+finalTotal;
+      document.querySelector("#finalTotal>p:last-child").value=finalTotal;
+
+    
+
 }

@@ -13,11 +13,8 @@
     margin-left:0px;
     border-bottom: 1px solid #111;
   } 
-  table, th, td {
-    border: 1px solid black;
-    border-collapse: collapse;
-  }
-  h1{
+  
+h1{
     font-family: 'Bodoni Moda', serif;
     font-size: 25px;
     font-weight: lighter;
@@ -31,15 +28,15 @@
       margin-top:30px;
       
   }
-  input[type]{
+  input:not([type="radio"]){
       width: 100%;
       margin-bottom: 30px;
       margin-top: 12px;
       height: 30px;
   }
-  input:focus{
+  /* input:focus{
         border-color: red;
-  }
+  } */
   
   label{
       font-size: 14px;
@@ -70,6 +67,17 @@
   #name{
       display: flex;
       justify-content: space-between;
+  }
+#gDays>p{
+    font-size: 30px;
+}
+  #g6,#g2,#g1{
+      display: flex;
+      justify-content: space-between;
+      font-size: 18px;
+  }
+  #g6>div:first-child>label, #g2>div:first-child>label, #g1>div:first-child>label{
+      font-size: 18px;
   }
 
   .valid{
@@ -107,17 +115,21 @@
     display: flex;
     justify-content: space-between;
 }
-#contId,input[type="submit"]{
+#contId,input[type="submit"],input[onclick]{
     background-color: black;
     color: white;
     width:100%;
     margin-top:30px;
     height:40px;
     font-size:22px;
+    text-align: center;
 }
-input[type="submit"]:hover{
-        
+#pay{
+    margin-top: 30px;
+
 }
+
+
 
 #orderid{
     display: flex;
@@ -184,7 +196,7 @@ input[type="submit"]:hover{
     width:90%;
     margin:auto;
 }
-#shipping{
+#shiptotal{
     display:flex;
     justify-content: space-between;
     width:90%;
@@ -200,11 +212,5 @@ input[type="submit"]:hover{
     font-weight: bold;
 }
 
-#btn1{
-    display: flex;
-    justify-content:flex-start;
-    
-    /* background-color: #006EB3;*/
-}
 
 
