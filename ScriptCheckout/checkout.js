@@ -28,9 +28,13 @@ togglepwd.addEventListener("click",function(){
 
 input1.onfocus=function(){
     document.querySelector("#msg").style.display="flex";
+    document.querySelector("#lower_div > div:first-child").style.height="450px";
+
 } ;
 input1.onblur=function(){
     document.querySelector("#msg").style.display="none";
+    document.querySelector("#lower_div > div:first-child").style.height="420px";
+
 };
 
 input1.addEventListener('keyup', myScript);
@@ -109,7 +113,7 @@ function myScript(event){
 }
 
 //Right Portion:Order Summary
-var cartList=JSON.parse(localStorage.getItem("CartList"));
+var cartList=JSON.parse(localStorage.getItem("cartList"));
 
 display(cartList);
 displayTotal();
@@ -220,5 +224,19 @@ function myscript()
       document.querySelector("#finalTotal>p:last-child").value=finalTotal;
 
     
+    document.querySelector("#lower_div > div:first-child").style.height="2000px";
 
+}
+
+
+
+var form1= document.querySelector("#contact");
+form1.addEventListener("submit",check_user);
+
+function check_user(e){
+    e.preventDefault();
+    var user = form1.mail.value;
+    var pwd = form1.pwwd.value;
+    
+    document.querySelector("#lower_div > div:first-child").style.height="1200px";
 }

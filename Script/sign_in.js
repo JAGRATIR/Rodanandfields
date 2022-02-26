@@ -18,6 +18,16 @@ if(email.trim()=="" || password.trim()==""){
     document.querySelector("#email").style.backgroundColor="transparent";
     document.querySelector("#password").style.backgroundColor="transparent";
 
-    console.log(email,password);
+    if(email=="akshit@mail.com" && password=="12345"){
+        document.querySelector(".pass_required").style.color="green";
+        document.querySelector(".pass_required").innerText="User logged in successfully";
+
+        
+    }else{
+        document.querySelector("#email").style.backgroundColor="red";
+         document.querySelector("#password").style.backgroundColor="red";
+        document.querySelector(".pass_required").style.color="red";
+        document.querySelector(".pass_required").innerText="Something went wrong";
+    }
 }
 }

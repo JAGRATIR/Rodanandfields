@@ -663,6 +663,8 @@
         "$" + Math.floor((total / 100) * 70);
       document.querySelector("#estimated_sub").innerText =
         "$" + Math.floor((total / 100) * 70);
+      document.querySelector("#promo_value").disabled = true;
+      document.querySelector("#promo>input[type='submit']").disabled = true;
     } else if (code.trim().length == 0) {
       alert("Please enter some code first");
     } else {
