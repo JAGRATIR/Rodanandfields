@@ -1,0 +1,323 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" type="image/x-icon" media="all" href="https://www.rodanandfields.com/en-us/_ui/responsive/theme-alpha/images/favicon.ico" />
+    <title>Your Bag | Rodan + Fields®</title>
+</head>
+<style>
+    @import url('https://fonts.googleapis.com/css2?family=Bodoni+Moda&family=Montserrat:wght@400;600;700&family=Noto+Serif+Display&display=swap');
+    
+    body{
+        
+        font-family: 'Montserrat', sans-serif;
+    }
+   
+    #cartPage_container{
+        width: 80%;
+        margin: auto;
+    }
+
+  #hader{
+      text-align: center;
+      font-family: 'Bodoni moda', sans-serif;
+  }
+  #display{
+      display: flex;
+     
+  }
+  #mmbrship{
+      background-color: rgb(194, 194, 194);
+      border: 2px black;
+      padding: 60px;
+      
+  }
+  #btn{
+    height: 40PX; 
+    width:100%; 
+    margin-top: 10px ;  
+    background-color: black; 
+    color: aliceblue; 
+                                         
+  }
+  #summery{
+      
+    background-color: rgb(248, 248, 248) ;
+      margin-top: 10px;
+      margin-bottom: 20px;
+      border: 1px solid gray;
+      padding: 20px;
+      height: auto;
+      
+      
+  }
+
+  #summery_card{
+      display: flex!important;
+      width: 100%;
+  }
+  #summery_card>div{
+display: flex;
+width: 100%;
+justify-content: space-between;
+align-items: center;
+padding-right:20px;
+  }
+  #summery_card>div>div:nth-child(1){
+      text-align: left;
+      
+  }
+  #summery_card>div>div:nth-child(1)>p{
+color: rgb(96, 96, 230);
+  }
+
+  #summery_card>div>div:nth-child(1)>span{
+      border: 1px solid #888;
+      padding:1px 8px;
+  }
+
+  #summery_card>div>div:nth-child(2){
+      display: flex;
+      flex-direction: column;
+      justify-content: space-around;
+      height: 70%;
+  }
+  #sub{
+      float: right;
+      margin-top: -7%;
+  }
+  #margin{
+      margin-top: 5%;
+    }
+  #promo
+  {
+      width: 100%;
+      display: flex;
+      column-gap: 0px;
+      align-content: center;
+      height: 50px;
+  }
+  #promo>input
+  {
+      background-color: white;
+      border: 1px solid gray;
+  }
+  #promo>input:nth-child(1)
+  {
+    border-bottom-left-radius: 10px;
+    border-top-left-radius: 10px;
+    width: 70%;
+  }
+  #promo>input:nth-child(2)
+  {
+    border-bottom-right-radius: 10px;
+    border-top-right-radius: 10px;
+    width: 30%;
+  }
+  
+
+</style>
+<body>
+            <!-- nav bar -->
+
+
+
+
+             <!-- hadre -->
+
+   <div id="cartPage_container">
+    <h1  id="hader">
+        REVIEW YOUR BAG 
+    </h1>
+     <div id="display">
+        
+     <div style="text-align: center;">
+                <!-- Membership -->
+     <div id="mmbrship">
+         <img src="https://www.rodanandfields.com/en-us/_ui/images/pcperks_upsell/pc-perks-logo.png "alt="pc-perks-logo">
+                      <p> Subscribe & Save $18.00! </p>
+                      <p>join PC Perks for $19.95 to save 10% +Gift free shipping on orders $8 0+</p>
+                      <a href=""> View More</a>
+            <div >
+                          <button id="btn" >
+                               ADD MEMBERSHIP-$19.95
+                          </button>
+            </div>
+    </div>
+  
+  
+           <!-- ordered itm -->
+
+                            <div id="summery ">
+
+                              
+    
+
+
+
+
+                            </div>
+
+              
+     </div >
+     
+
+      <!-- ORDER SUMMARY -->
+      
+      <div id="summery"  style="margin-left:10px; width: 800px;;">
+        
+        <div id="display">
+             <h2>ORDER SUMMARY</h2>
+            </div>
+        <h4>SUBTOTAL</h4>
+        <h3 id="sub sub_total">$175.00</h3>
+        <H4> SHIPPING</H4>
+        <h6 id="sub" >Calculated At Checkout</h6>
+      
+            
+            
+        <hr id="margin"/>
+            
+            <h4>Estimated Total</h4>
+            <h4  id="sub estimated_sub">$45</h4>
+            <h5>4 intrest-free payment of $43.75 with </h5>
+              <h3>Klarna <a href="">Learn more</a></h3>
+              <hr id="margin"/>
+
+              <form id="promo">
+               <input placeholder="Enter Promo Code">
+               <input type="submit" value="APPLY">
+              </form>
+              <hr>
+                                <button  type="submit" style="height: 40px; width: 100%;
+                    color:black; background-color: antiquewhite;"> CONTINUE SHOPPING </button>
+                    <button  type="submit" style="height: 40px; width: 100%;
+                    color:rgb(248, 248, 248); background-color: rgb(0, 0, 0);
+                    margin-top: 10PX;">SECURE CHECKOUT</button>
+               
+             
+      </div>
+ </div>
+                    <!-- card -->
+
+                <div id="" style="float: right;width: 40%;margin-right: -3%;">
+                        
+                        <p> we accept
+                        
+                        
+                    <img 
+                    style="height: 30px;width: 50px;"
+                    src="https://www.rodanandfields.com/en-us/_ui/images/card-icons/cc-paypal.png" alt="PayPal">
+                    <img
+                    style="height: 30px;width: 50px;"
+                    src="https://www.rodanandfields.com/en-us/_ui/images/card-icons/cc-visa.png" alt="visa">
+                    <img
+                    style="height: 30px;width: 50px;" src="https://www.rodanandfields.com/en-us/_ui/images/card-icons/cc-mastercard.png" alt="mastercard">
+                    <img
+                    style="height: 30px;width: 50px;" src=" https://www.rodanandfields.com/en-us/_ui/images/card-icons/cc-discover.png" alt="xxx">
+                    <img
+                    style="height: 30px;width: 50px;" src="https://www.rodanandfields.com/en-us/_ui/images/card-icons/cc-amex.png" alt="xxy">
+                    <img
+                    style="height: 30px;width: 50px;" src="https://www.rodanandfields.com/en-us/_ui/images/card-icons/klarna-logo.png" alt="xsx">
+                    
+                    
+                    </p>
+                </div>
+    
+           
+             <!-- FOOTER -->
+
+       
+    <div>
+        
+    </div>
+
+   </div>
+     
+
+
+</body>
+</html>
+<script>
+    var CartList = JSON.parse(localStorage.getItem("CartList"))|| [];
+
+    function displayData(data){
+        data.map(function(elem,index){
+            var div = document.createElement("div");
+            div.id="summery_card";
+            var img = document.createElement("img");
+            img.setAttribute("src",elem.img);
+            var div2= document.createElement("div");
+            var div3= document.createElement("div");
+            var div4= document.createElement("div");
+
+            div2.append(div3,div4);
+            var h4 = document.createElement("h4");
+            h4.innerText=elem.name;
+            var p = document.createElement("p");
+            p.innerText="Congratulation you get 10% discount on this item."
+            var inc_qty = document.createElement("button");
+        inc_qty.innerText = "+";
+        inc_qty.className="inc";
+        inc_qty.addEventListener("click", function () {
+          increase_qty(index);
+        });
+    
+        var quantity = document.createElement("span");
+        quantity.innerText =elem.qty;
+        var dec_qty = document.createElement("button");
+        dec_qty.innerText = "-";
+        dec_qty.className="dec";
+        dec_qty.addEventListener("click", function () {
+          decrease_qty(index);
+        });
+        div3.append(h4,p,inc_qty,quantity,dec_qty);
+
+        var dltBtn= document.createElement("p");
+        p.innertext="delete";
+        var price = document.createElement("h4");
+        pric.innerText=elem.price;
+
+        div4.append(dltBtn,price)
+        div.append(img,div2,div3,div4);
+
+        document.querySelector("#summery").append(div);
+
+
+        })
+    }
+
+    displayData(CartList);
+    show_total();
+
+    function increase_qty(index) {
+      cartarray[index].qty++;
+      localStorage.setItem("CartList",JSON.stringify(CartList));
+      display_data(CartList);
+      show_total();
+  }
+
+  function decrease_qty(index) {
+      if(cartarray[index].qty>1){
+          cartarray[index].qty--;
+      }
+      localStorage.setItem("CartList",JSON.stringify(CartList));
+      display_data(CartList);
+      show_total();
+  }
+  function show_total(){
+    var total = CartList.reduce(function(acc,elem){
+        return acc+(elem.price * elem.qty);
+    },0);
+  
+    var total_price = document.querySelector("#sub_total");
+    var estmtd_price = document.querySelector("#estimated_sub")
+  
+    total_price.innerText="$"+total;
+    estmtd_price.innerText="$"+total;
+
+ }
+    
+</script>
