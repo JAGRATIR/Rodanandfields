@@ -1,0 +1,546 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="shortcut icon"
+      type="image/x-icon"
+      media="all"
+      href="./Styles/favicon.ico"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/boxicons/2.1.0/css/boxicons.min.css"
+      integrity="sha512-pVCM5+SN2+qwj36KonHToF2p1oIvoU3bsqxphdOIWMYmgr4ZqD3t5DjKvvetKhXGc/ZG5REYTT6ltKfExEei/Q=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="stylesheet" href="./Styles/navbar_footer.css" />
+    <link rel="stylesheet" href="./proStyles/product.css" />
+
+    <title>All Skincare Products | Rodan + Fields®</title>
+  </head>
+  <body>
+    <div class="scroll-up-btn">UP</div>
+    <!-- Primary nav bar -->
+    <nav>
+      <div class="mobile_navbar">
+        <div class="nav_container">
+          <div class="ham_menu">
+            <div></div>
+            <div></div>
+          </div>
+          <a href="./index.html"
+            ><img
+              src="https://www.rodanandfields.com/en-us/medias/rf-logo.svg?context=bWFzdGVyfGltYWdlc3w3MzczfGltYWdlL3N2Zyt4bWx8aW1hZ2VzL2g2MC9oYWIvODgyMjE0NzE4NjcxOC5zdmd8YjNmMmU2YTg5MTM0NTMzM2Y2ODg2ZmRkZTJhNmY2OWZhYmYyYjk5NWQxODkxODFiYjVkY2MxY2NjOWRlMzA5OA"
+              alt="Rodan + Fields"
+          /></a>
+          <div class="links">
+            <div class="search"><i class="bx bx-search"></i></div>
+            <div class="cart"><i class="bx bx-shopping-bag"></i></div>
+          </div>
+        </div>
+      </div>
+
+      <div class="mobile_menu">
+        <div class="menu_container">
+          <div class="nav_top">
+            <div class="sign_in">Sign in <i class="bx bx-user"></i></div>
+            <div>X</div>
+          </div>
+          <div>Shop By Category</div>
+          <div>Shop By Concern</div>
+          <div>Shop By Product Line</div>
+          <div>Best Sellers</div>
+          <div>Featured</div>
+          <div>Our Story</div>
+          <div>Perks Program</div>
+          <div>Become A Consultant</div>
+          <div>Blog</div>
+          <div>Find A Consultant</div>
+          <div class="country">
+            <img
+              src="https://www.rodanandfields.com/en-us/_ui/dest/images/flagUSA.png"
+              alt="Flag"
+            />
+            <span>English</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="navbar">
+        <h4>FIND A CONSULTANT</h4>
+        <a href="./index.html"
+          ><img
+            src="https://www.rodanandfields.com/en-us/medias/rf-logo.svg?context=bWFzdGVyfGltYWdlc3w3MzczfGltYWdlL3N2Zyt4bWx8aW1hZ2VzL2g2MC9oYWIvODgyMjE0NzE4NjcxOC5zdmd8YjNmMmU2YTg5MTM0NTMzM2Y2ODg2ZmRkZTJhNmY2OWZhYmYyYjk5NWQxODkxODFiYjVkY2MxY2NjOWRlMzA5OA"
+            alt="Rodan + Fields"
+        /></a>
+        <div class="links">
+          <div class="search">Search <i class="bx bx-search"></i></div>
+          <div class="sign_in">Sign in <i class="bx bx-user"></i></div>
+          <div class="signInForm hide">
+            <form id="sign_in">
+              <label for="email">Email</label> <br />
+              <input type="email" id="email" /> <br />
+              <div class="user_required"></div>
+              <label for="password">Password</label>
+              <a href="#">Forgot Password?</a> <br />
+              <input type="password" id="password" />
+              <div class="pass_required"></div>
+              <p>
+                This site is protected by reCAPTCHA and the Google Privacy
+                Policy and Terms of Service apply.
+              </p>
+              <input class="form_btn" type="submit" value="Sign In" />
+            </form>
+          </div>
+          <div class="cart"><i class="bx bx-shopping-bag"></i></div>
+          <div class="country">
+            <img
+              src="https://www.rodanandfields.com/en-us/_ui/dest/images/flagUSA.png"
+              alt="Flag"
+            />
+            <span>English</span>
+          </div>
+        </div>
+      </div>
+      <!-- search bar box  -->
+      <div class="search_bar_area hide">
+        <div class="search_container">
+          <input type="text" id="search" /><span>X</span>
+          <p>Search for products, concerns and keywords.</p>
+          <div class="search_links">
+            <div>
+              <h4>Common Searches</h4>
+              <ul>
+                <li><a href="#">Acne</a></li>
+                <li><a href="#">Moisturizer</a></li>
+                <li><a href="#">Retinol</a></li>
+                <li><a href="#">Face Serum</a></li>
+                <li><a href="#">Brows</a></li>
+              </ul>
+            </div>
+            <div>
+              <h4>Popular Products</h4>
+              <ul>
+                <li><a href="#">R+F Lash Boost </a></li>
+                <li><a href="#">REDEFINE Regimen</a></li>
+                <li><a href="#">Multi-Function Eye Cream</a></li>
+                <li><a href="#">Active Hydration Serum</a></li>
+                <li><a href="#">Micro-Dermabrasion Paste</a></li>
+              </ul>
+            </div>
+            <div>
+              <div>
+                <img
+                  src="https://www.rodanandfields.com/en-us/medias/21-GR-Spot-Corrector-Core-Regimen-SEARCH-promotion-widescreen.jpg?context=bWFzdGVyfHJvb3R8MTUxMjN8aW1hZ2UvanBlZ3xoN2EvaDA5LzEyNzgwOTI4MjcwMzY2LmpwZ3xlZDYwZjU3ZDkyMDVhYzEyMmRjYzJjZGMzMjg3OGU2MGI0M2FkYjc0ZmE3YzUzYjgxOTgxMmU4ZjA1OWY1MDAw"
+                  alt="img"
+                />
+                <div class="right">
+                  <p>Tackle stubborn dark marks with REVERSE SPOT CORRECTOR.</p>
+                  <a href="#">Shop Now</a>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="search_results">
+            <p></p>
+            <a href="#">View All</a>
+          </div>
+          <div class="serach_result_container"></div>
+        </div>
+      </div>
+
+      <!-- cart box  -->
+      <div class="cart_area">
+        <div class="cart_box">
+          <div class="cart_nav">
+            <i class="bx bx-shopping-bag"></i>
+            <h3>Your Bag</h3>
+            <p>X</p>
+          </div>
+          <div class="cart_mid">
+            <h3>Your Bag Is Empty</h3>
+            <p>Shop now to add products to your bag</p>
+            <button class="cart_btn">START SHOPPING</button>
+          </div>
+          <div class="cart_items"></div>
+          <div class="cart_footer">
+            <p>Savings, shipping costs and tax calculated at checkout</p>
+            <div class="price_total">
+              <h3>SUBTOTAL</h3>
+              <h3></h3>
+            </div>
+            <buttom class="cart_btn">Review Bag & Checkout</buttom>
+          </div>
+        </div>
+      </div>
+
+      <!-- secondary navbar  -->
+      <div class="secondary_nav">
+        <div class="drop">
+          <a href="#">SHOP</a>
+          <div class="dropDown">
+            <div>
+              <h4>SHOP BY CATEGORY</h4>
+              <ul>
+                <li><a href="./regimens/regimens 1.html">Regimens</a></li>
+                <li><a href="./product.html">Face Serums</a></li>
+                <li><a href="./product.html">Eyes, Lips & Lashes</a></li>
+                <li><a href="./product.html">Face Masks</a></li>
+                <li><a href="./product.html">Dermacosmeticss</a></li>
+                <li><a href="./product.html">Hand & Body</a></li>
+                <li><a href="./product.html">Sun Protection</a></li>
+                <li><a href="./product.html">Pro Skincare Tools</a></li>
+                <li><a href="./product.html">Accessories</a></li>
+                <li><a href="./product.html">Special Offers</a></li>
+              </ul>
+            </div>
+            <div>
+              <h4>SHOP BY CONCERN</h4>
+              <ul>
+                <li><a href="./product.html">Fine Lines & Deep Wrinkles</a></li>
+                <li><a href="./product.html">Lifting & Firming</a></li>
+                <li><a href="./product.html">Dull & Tired Skin</a></li>
+                <li><a href="./product.html">Acne & Breakouts</a></li>
+                <li><a href="./product.html">Teen Acne</a></li>
+                <li><a href="./product.html">Uneven Tone & Brown Spots</a></li>
+                <li>
+                  <a href="./product.html">Sensitivity/Visible Redness</a>
+                </li>
+                <li><a href="./product.html">Pores & Blackheads</a></li>
+                <li><a href="./product.html">Dry Skin</a></li>
+              </ul>
+            </div>
+            <div>
+              <h4>SHOP BY PRODUCT LINE</h4>
+              <ul>
+                <li><a href="./product.html">Redefine</a></li>
+                <li><a href="./product.html">Reverse</a></li>
+                <li><a href="./product.html">Recharge</a></li>
+                <li><a href="./product.html">Unblemish</a></li>
+                <li><a href="./product.html">Spotless</a></li>
+                <li><a href="./product.html">Soothe</a></li>
+                <li><a href="./product.html">Enhancements</a></li>
+                <li><a href="./product.html">Essentials</a></li>
+                <li><a href="./product.html">Dermacosmetics</a></li>
+                <li><a href="./product.html">All Products</a></li>
+              </ul>
+            </div>
+          </div>
+        </div>
+        <div><a href="#">BEST SELLERS</a></div>
+        <div class="drop">
+          <a href="#">FEATURED</a>
+          <div class="dropDown">
+            <div>
+              <ul>
+                <li><a href="#">Special Offers</a></li>
+                <li><a href="#">New Total Rf Serum</a></li>
+                <li><a href="#">Spotless For Teens</a></li>
+                <li><a href="#">Self-Care Essentials</a></li>
+              </ul>
+            </div>
+          </div>
+        </div>
+        <div class="drop">
+          <a href="#">OUR STORY</a>
+          <div class="dropDown">
+            <div>
+              <ul>
+                <li><a href="#">R+F Difference</a></li>
+                <li><a href="#">Personalized Service</a></li>
+                <li><a href="#">Explore Our Regimens</a></li>
+                <li><a href="#">Our Founders</a></li>
+                <li><a href="#">Our Impact</a></li>
+              </ul>
+            </div>
+          </div>
+        </div>
+        <div><a href="#">PERKS PROGRAM</a></div>
+        <div><a href="#">BECOME A CONSULTANT</a></div>
+        <div><a href="#">BLOG</a></div>
+      </div>
+    </nav>
+
+    <div id="overlay"></div>
+
+    <div id="container">
+      <div id="filter">
+        <h5>Filter By</h5>
+        <hr />
+        <div class="multipleSelection">
+          <div class="selectBox" onclick="showproduct()">
+            <div id="cat">
+              <p>CATEGORY</p>
+              <img
+                id="downarrow"
+                src="https://www.citypng.com/public/uploads/preview/dark-gray-down-head-arrow-11581594305zjibgsalxd.png"
+              />
+            </div>
+          </div>
+          <div id="productlist">
+            <label for="first">
+              <input
+                type="checkbox"
+                onclick="myfunction('regimen')"
+                id="search"
+              />
+
+              Regimens(24)
+            </label>
+
+            <label for="second">
+              <input
+                type="checkbox"
+                onclick="myfunction('Serum')"
+                id="search"
+              />
+              Face Serums(15)
+            </label>
+            <label for="third">
+              <input type="checkbox" onclick="myfunction('eye')" id="search" />
+              Eyes(14)
+            </label>
+            <label for="fourth">
+              <input type="checkbox" onclick="myfunction('mask')" id="search" />
+              Face Masks(5)
+            </label>
+            <label for="five">
+              <input type="checkbox" onclick="myfunction('body')" id="search" />
+              Hand & Body(5)
+            </label>
+
+            <label for="six">
+              <input type="checkbox" onclick="myfunction('sun')" id="search" />
+              Sun Protection(9)
+            </label>
+            <label for="seven">
+              <input type="checkbox" onclick="myfunction('skin')" id="search" />
+              Pro Skincare Tools(11)
+            </label>
+            <label for="eigth">
+              <input
+                type="checkbox"
+                onclick="myfunction('accessories')"
+                id="search"
+              />
+              Accessories(9)
+            </label>
+            <label for="nine">
+              <input
+                type="checkbox"
+                onclick="myfunction('special')"
+                id="search"
+              />
+              Special Offers(18)
+            </label>
+          </div>
+        </div>
+        <hr />
+        <div class="multipleSelection">
+          <div class="selectBox" onclick="skinconcern()">
+            <div id="cat">
+              <p>SKIN CONCERN</p>
+              <img
+                id="downarrow"
+                src="https://www.citypng.com/public/uploads/preview/dark-gray-down-head-arrow-11581594305zjibgsalxd.png"
+              />
+            </div>
+          </div>
+
+          <div id="skinlist">
+            <label for="first">
+              <input type="checkbox" onclick="myfunction('fine')" id="search" />
+              Fine Lines & Wrinkles (24)
+            </label>
+
+            <label for="second">
+              <input
+                type="checkbox"
+                onclick="myfunction('Lifting & Firming')"
+                id="search"
+              />
+              Lifting & Firming (20)
+            </label>
+
+            <label for="third">
+              <input type="checkbox" onclick="myfunction('dull')" id="search" />
+              Dull & Tired Skin (8)
+            </label>
+
+            <label for="fourth">
+              <input type="checkbox" onclick="myfunction('acne')" id="search" />
+              Acne & Breakouts (13)
+            </label>
+
+            <label for="five">
+              <input
+                type="checkbox"
+                onclick="myfunction('uneven')"
+                id="search"
+              />
+              Uneven Tone & Dark Marks (12)
+            </label>
+
+            <label for="six">
+              <input
+                type="checkbox"
+                onclick="myfunction('sensitivity')"
+                id="search"
+              />
+              Sensitivity & Visible Redness (8)
+            </label>
+
+            <label for="seven">
+              <input
+                type="checkbox"
+                onclick="myfunction('pores')"
+                id="search"
+              />
+              Pores & Blackheads (11)
+            </label>
+
+            <label for="eigth">
+              <input type="checkbox" onclick="myfunction('dry')" id="search" />
+              Dry Skin (7)
+            </label>
+          </div>
+        </div>
+        <hr />
+
+        <div class="multipleSelection">
+          <div class="selectBox" onclick="applicationarea()">
+            <div id="cat">
+              <p>APPLICATION AREA</p>
+              <img
+                id="downarrow"
+                src="https://www.citypng.com/public/uploads/preview/dark-gray-down-head-arrow-11581594305zjibgsalxd.png"
+              />
+            </div>
+            <!-- <div class="overSelect"></div> -->
+          </div>
+
+          <div id="applicationarea">
+            <label for="first">
+              <input type="checkbox" onclick="myfunction('face')" id="search" />
+              Face (17)
+            </label>
+            <label for="second">
+              <input type="checkbox" onclick="myfunction('eye')" id="search" />
+              Eyes (2)
+            </label>
+            <label for="third">
+              <input type="checkbox" onclick="myfunction('lip')" id="search" />
+              Lips (1)
+            </label>
+          </div>
+        </div>
+        <hr />
+        <div class="multipleSelection">
+          <div class="selectBox" onclick="productline()">
+            <div id="cat">
+              <p>PRODUCT LINE</p>
+              <img
+                id="downarrow"
+                src="https://www.citypng.com/public/uploads/preview/dark-gray-down-head-arrow-11581594305zjibgsalxd.png"
+              />
+            </div>
+          </div>
+
+          <div id="productlinelist">
+            <label for="first">
+              <input
+                type="checkbox"
+                onclick="myfunction('redefine')"
+                id="search"
+              />
+              Redefine (20)
+            </label>
+
+            <label for="second">
+              <input
+                type="checkbox"
+                onclick="myfunction('Enhancements')"
+                id="search"
+              />
+
+              Enhancements (2)
+            </label>
+          </div>
+        </div>
+      </div>
+
+      <div id="productarray"></div>
+    </div>
+    <!-- footer section  -->
+    <footer>
+      <div class="primary">
+        <div>
+          <h5>ABOUT R+F</h5>
+          <ul>
+            <li><a href="#">PRESS ROOM</a></li>
+            <li><a href="#">COMPANY INFO</a></li>
+            <li><a href="#">EXECUTIVE TEAM</a></li>
+            <li><a href="#">CAREERS</a></li>
+            <li><a href="#">R+F RECYCLING PROGRAM</a></li>
+            <li><a href="#">BLOG</a></li>
+          </ul>
+        </div>
+        <div>
+          <h5>HELP</h5>
+          <ul>
+            <li><a href="#">PRODUCT & HELP CENTER</a></li>
+            <li><a href="#">SHIPPING</a></li>
+            <li><a href="#">SATISFACTION GUARANTEE</a></li>
+            <li><a href="#">PROMOTIONAL TERMS & CONDITIONS</a></li>
+            <li><a href="#">R+F FACTS</a></li>
+            <li><a href="#">KLARNA</a></li>
+            <li><a href="#">SITE MAP</a></li>
+          </ul>
+        </div>
+        <div>
+          <h3>Let’s Get Social</h3>
+          <a href="https://www.facebook.com/rodanandfields"
+            ><i class="bx bxl-facebook"></i
+          ></a>
+          <a href="https://twitter.com/RodanFieldsHQ"
+            ><i class="bx bxl-twitter"></i
+          ></a>
+          <a href="https://www.instagram.com/rodanandfields/"
+            ><i class="bx bxl-instagram"></i
+          ></a>
+          <a href="https://www.youtube.com/user/RodanFields"
+            ><i class="bx bxl-youtube"></i
+          ></a>
+          <a href="https://in.pinterest.com/RodanandFields/"
+            ><i class="bx bxl-pinterest-alt"></i
+          ></a>
+        </div>
+      </div>
+      <div class="secondary">
+        <div>© 2022 Rodan & Fields</div>
+        <div>Privacy Policy</div>
+        <div>|</div>
+        <div>Terms & Conditions</div>
+        <div>|</div>
+        <div>Accessibility</div>
+        <div>|</div>
+        <div>California Supply Chains Act</div>
+        <div>|</div>
+        <div>DSA Code Of Ethics</div>
+        <div>|</div>
+        <div>Disclaimer</div>
+        <div>|</div>
+        <div>Preference Center</div>
+      </div>
+    </footer>
+  </body>
+</html>
+<script src="./data/products.js"></script>
+<script src="./proscript/product.js"></script>
+<script src="./Script/cart.js"></script>
+<script src="./Script/search.js"></script>
+<script src="./Script/sign_in.js"></script>

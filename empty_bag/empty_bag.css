@@ -1,0 +1,67 @@
+@import url("https://fonts.googleapis.com/css2?family=Bodoni+Moda&family=Montserrat:wght@100;200;300;400;600;700&family=Nanum+Gothic&family=Noto+Serif+Display&display=swap");
+
+body {
+  font-family: "Montserrat", sans-serif;
+}
+#title {
+  width: 100%;
+  margin: 60px auto;
+  text-align: center;
+  padding-top: 200px;
+}
+#title > p {
+  font-weight: 300;
+  line-height: 1.7rem;
+  color: #222;
+  font-size: 14.5px;
+  margin-bottom: 25px;
+}
+.reg {
+  font-family: "Bodoni Moda", serif;
+  font-size: 30px;
+  font-weight: lighter;
+  color: #222;
+  margin-bottom: 0px;
+  line-height: 20px;
+}
+
+.blackb {
+  margin: auto;
+  margin-bottom: 100px;
+  width: 300px;
+  height: 40px;
+  background-color: #222;
+  border-radius: 5px;
+
+  word-spacing: 2px;
+  letter-spacing: 2px;
+  font-weight: 400;
+  font-size: 15px;
+  color: white;
+  border: transparent;
+  font-family: "Montserrat", sans-serif;
+}
+
+.blackb:hover {
+  background-color: rgb(73, 73, 73);
+}
+
+h5 {
+  font-weight: 300;
+  font-size: small;
+}
+
+@media all and (min-width: 310px) and (max-width: 634px) {
+  .blackb {
+    width: 95%;
+  }
+}
+
+@media all and (min-width: 50px) and (max-width: 309px) {
+  .blackb {
+    width: auto;
+  }
+  .reg {
+    line-height: 40px;
+  }
+}

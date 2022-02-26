@@ -1,0 +1,583 @@
+@import url("https://fonts.googleapis.com/css2?family=Bodoni+Moda:wght@400;500&family=Montserrat:wght@400;500&display=swap");
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+  list-style: none;
+  font-family: "Montserrat", sans-serif;
+}
+
+html,
+body {
+  scroll-behavior: smooth;
+}
+/* scroll-up button styling*/
+.scroll-up-btn {
+  position: fixed;
+  height: 45px;
+  width: 45px;
+  background-color: #00b8e5;
+  border-radius: 50px;
+  right: 20px;
+  bottom: 30px;
+  text-align: center;
+  line-height: 45px;
+  color: #fff;
+  z-index: 998;
+  font-size: 14px;
+  cursor: pointer;
+  opacity: 0;
+  pointer-events: none;
+  box-shadow: 0.1rem 0.1rem 0.5rem 0rem rgb(168 164 173 / 50%);
+  -webkit-transition: all 0.3s ease;
+  transition: all 0.3s ease;
+}
+
+.scroll-up-btn.show {
+  bottom: 70px;
+  opacity: 1;
+  pointer-events: auto;
+}
+
+.scroll-up-btn:hover {
+  -webkit-filter: brightness(90%);
+  filter: brightness(90%);
+}
+
+/* body overlay  */
+.body__overlay {
+  z-index: 999;
+  width: 100%;
+  height: 100%;
+  left: 0;
+  top: 0;
+  background-color: rgba(96, 96, 96, 0.7);
+  position: fixed;
+}
+
+.no_scroll {
+  overflow: hidden;
+}
+
+/* main section styling  */
+
+main {
+  margin-top: 134px;
+}
+main .container {
+  width: 95%;
+  margin: auto;
+  display: flex;
+}
+
+main .container .left {
+  background-color: rgb(249, 246, 244);
+}
+
+main .container .left .inner {
+  width: 66%;
+  height: 100%;
+  margin: auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.inner > h1 {
+  font-family: "Bodoni Moda", serif;
+  font-weight: 400;
+  font-size: 34px;
+  margin-bottom: 30px;
+}
+
+.inner > h1 + p {
+  font-weight: 500;
+  line-height: 1.5;
+  font-family: "Montserrat", sans-serif;
+  margin-bottom: 20px;
+}
+
+.inner > p + p {
+  font-size: 12px;
+}
+.inner > p + a {
+  font-size: 12px;
+  text-decoration: underline;
+  color: #222;
+}
+
+.right > img + img {
+  display: none;
+}
+
+.btn {
+  margin-top: 30px;
+  font-weight: 600;
+  color: #222;
+  line-height: 2;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  padding: 6px 18px;
+  border-radius: 4px;
+  border: solid 1px #222;
+  background-color: #fff;
+  cursor: pointer;
+}
+.btn:active {
+  box-shadow: 0 0 5px 2px #80aec9, 0 0 5px 0 rgb(0 0 0 / 50%) inset;
+}
+
+main > a {
+  position: absolute;
+  color: #111;
+  margin-top: 6px;
+  text-decoration: underline;
+  right: 40px;
+}
+
+/* carousel styling   */
+
+.carousel {
+  width: 95%;
+  height: fit-content;
+  margin: 40px auto;
+  overflow: hidden;
+  background-color: rgb(249, 246, 244);
+  user-select: none;
+  position: relative;
+}
+
+.left_button,
+.right_button {
+  font-size: 30px;
+  opacity: 0.5;
+  background-color: #dcdcdc;
+  position: absolute;
+  padding: 5px 15px;
+}
+
+.left_button {
+  top: 50%;
+  left: 20px;
+  display: none;
+}
+.right_button {
+  top: 50%;
+  right: 20px;
+}
+
+.carousel .carousel_items {
+  width: 100%;
+  display: grid;
+  grid-auto-flow: column;
+  grid-auto-columns: 25%;
+  overflow-y: hidden;
+  overflow-x: scroll;
+}
+
+.carousel .carousel_items::-webkit-scrollbar {
+  height: 4px;
+}
+
+.carousel .carousel_items::-webkit-scrollbar-thumb {
+  background: #888;
+  cursor: pointer;
+}
+.carousel .carousel_items::-webkit-scrollbar-track {
+  background: rgb(216, 216, 216);
+  cursor: pointer;
+}
+.carousel .carousel_items > div {
+  position: relative;
+  margin: 30px 10px;
+  padding: 30px 10px;
+  background-color: #fff;
+  text-align: center;
+}
+
+.carousel .carousel_items > div:first-child {
+  background: transparent;
+  background-image: url("https://www.rodanandfields.com/en-us/medias/Best-Sellers-Image-Desktop.jpg?context=bWFzdGVyfHJvb3R8NjA5MTd8aW1hZ2UvanBlZ3xoOTcvaGNkLzEyODg5MTg3ODExMzU4LmpwZ3w2ZGZjZGYxNzg4ZDY2ODI2NzQyZTMyNGI2YmExYmRkNGNjYTBkNGI4MzE5OTIwM2M4M2Q1MGZlMmY1YmFjMDJk");
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: bottom;
+  padding: 0 20px;
+  display: flex;
+  flex-direction: column;
+  text-align: left;
+  justify-content: space-evenly;
+  align-items: flex-start;
+}
+
+.carousel .carousel_items > div > h1 {
+  font-family: "Bodoni Moda", serif;
+  font-weight: 400;
+  font-size: 38px;
+}
+
+.carousel .carousel_items > div > img {
+  width: 260px;
+}
+
+.carousel .carousel_items > div > img + span {
+  position: absolute;
+  top: 16px;
+  right: 30px;
+  border: 1px solid #bbb;
+  font-size: 13px;
+  color: #bbb;
+  padding: 4px 10px;
+}
+
+h1 + a {
+  color: #111;
+  text-decoration: underline;
+}
+
+.carousel_items > div > h4 {
+  text-align: left;
+  font-weight: 600;
+  font-size: 15px;
+  padding-bottom: 20px;
+  color: #272829;
+}
+
+.carousel_items > div > h4 + p,
+.carousel_items > div > h3 + p {
+  font-size: 14px;
+  text-align: left;
+  padding-bottom: 20px;
+}
+
+.carousel_items > div > h3 {
+  text-align: left;
+  font-weight: 600;
+  font-size: 15px;
+  color: #272829;
+}
+
+.stars {
+  text-align: left;
+  font-size: 14px;
+  font-weight: 500;
+}
+
+.stars::before {
+  content: "★★★★★";
+  font-size: 13px;
+  letter-spacing: 2px;
+}
+.stars + button,
+.left + button {
+  width: 100%;
+  cursor: pointer;
+  box-shadow: 0 2px 4px 0 rgb(0 0 0 / 25%);
+}
+
+.stars + button:hover,
+.left + button:hover {
+  box-shadow: 0 0 0 0 #000, 0 0 5px 0 rgb(0 0 0 / 15%) inset;
+}
+
+/* All products styling  */
+
+.all_products {
+  background-color: rgb(249, 246, 244);
+  width: 95%;
+  height: 84vh;
+  margin: 40px auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.all_products > h1,
+.all_products > h1 > i {
+  font-family: "Bodoni Moda", serif;
+  font-weight: 400;
+  font-size: 38px;
+  padding-bottom: 20px;
+}
+
+.all_products > .products {
+  display: grid;
+  padding: 20px;
+  gap: 20px;
+  grid-template-columns: repeat(6, 1fr);
+  grid-template-rows: auto;
+}
+
+.all_products > .products > div {
+  position: relative;
+  padding: 10px;
+  background-color: #fefcfd;
+  border: 2px solid rgb(235, 231, 228);
+  border-radius: 10px;
+  text-align: center;
+  color: #5c5c5c;
+}
+
+.all_products > .products > div > img {
+  width: 100%;
+  border-radius: 14px;
+}
+
+.all_products > .products > div > img:nth-child(2) {
+  position: absolute;
+  top: 0;
+  left: 0;
+  opacity: 0;
+}
+
+.all_products > .products > div > img:hover {
+  opacity: 0.9;
+  pointer-events: all;
+}
+.all_products > .products > div > h4 {
+  margin-top: 10px;
+  letter-spacing: 1px;
+}
+
+.btn2 {
+  background-color: transparent;
+  padding: 10px;
+  width: 350px;
+  cursor: pointer;
+}
+
+.btn2:hover {
+  text-decoration: underline;
+}
+
+/* grid carousel styling  */
+
+.grid_carousel {
+  width: 95%;
+  height: fit-content;
+  margin: auto;
+  overflow: hidden;
+  user-select: none;
+  position: relative;
+}
+.grid_carousel .grid_carousel_items {
+  width: 100%;
+  display: grid;
+  grid-auto-flow: column;
+  grid-auto-columns: 50%;
+  overflow-y: hidden;
+  overflow-x: auto;
+}
+
+.grid_carousel > .grid_carousel_items > .item {
+  display: flex;
+  margin: 30px 10px;
+  border-radius: 4px;
+}
+
+.grid_carousel > .grid_carousel_items > .item:nth-child(1) {
+  background-color: #f4efe7;
+}
+.grid_carousel > .grid_carousel_items > .item:nth-child(2) {
+  background-color: #cde2c7;
+}
+.grid_carousel > .grid_carousel_items > .item:nth-child(3) {
+  background-color: #eee1db;
+}
+.item > img {
+  width: 50%;
+  border-radius: 4px;
+}
+
+.grid_carousel > .grid_carousel_items > .item > .left_item {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  width: 50%;
+  padding: 20px;
+}
+
+.item > .left_item > h2 {
+  font-family: "Bodoni Moda", serif;
+  font-weight: 400;
+  font-size: 38px;
+}
+
+.item > .left_item > h2 + p {
+  font-weight: 500;
+  width: 80%;
+}
+
+.item > .left_item > a {
+  color: #111;
+  text-decoration: underline;
+  font-weight: 500;
+}
+
+.grid_carousel .grid_carousel_items::-webkit-scrollbar {
+  height: 4px;
+}
+
+.grid_carousel .grid_carousel_items::-webkit-scrollbar-thumb {
+  background: #888;
+  cursor: pointer;
+}
+.grid_carousel .grid_carousel_items::-webkit-scrollbar-track {
+  background: rgb(216, 216, 216);
+  cursor: pointer;
+}
+
+/* medical section styling  */
+
+.medical {
+  background-color: #f8f8f8;
+  width: 95%;
+  height: 70vh;
+  margin: 40px auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.medical > div {
+  padding: 20px;
+  margin: 20px;
+  text-align: center;
+}
+
+.medical > div > h3 {
+  font-family: "Bodoni Moda", serif;
+  font-weight: 400;
+  font-size: 22px;
+  letter-spacing: 1px;
+  margin: 10px 0;
+}
+.medical > div > img {
+  width: 100%;
+}
+
+.medical > div > p {
+  font-weight: 400;
+  padding: 20px 40px;
+}
+
+.medical > div > a {
+  color: #111;
+  text-decoration: underline;
+  font-weight: 400;
+}
+
+section + h4 {
+  margin-left: 40px;
+  font-size: 22px;
+  font-weight: 500;
+}
+
+/* services styling  */
+
+.services {
+  width: 95%;
+  padding: 40px;
+  margin: 4px auto;
+  background-color: #e1eaf1;
+}
+
+.services > .inner {
+  background-color: #fff;
+  display: flex;
+  justify-content: space-around;
+  width: 80%;
+  padding: 20px;
+  margin: auto;
+}
+
+.services > .inner > .left {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+}
+.services > .inner > .left + button {
+  width: unset;
+}
+
+.services > .inner > .left > h1 {
+  font-family: "Bodoni Moda", serif;
+  font-weight: 400;
+  font-size: 28px;
+  width: 60%;
+  text-align: center;
+}
+
+.services > .inner > .left > ul > li {
+  list-style: disc;
+  font-weight: 500;
+}
+
+@media all and (min-width: 50px) and (max-width: 864px) {
+  main .container {
+    flex-direction: column-reverse;
+    text-align: center;
+  }
+
+  main .container .left .inner {
+    padding: 20px;
+  }
+  .right > img + img {
+    display: block;
+    width: 100%;
+  }
+  .right > img {
+    display: none;
+  }
+
+  .carousel .carousel_items {
+    grid-auto-columns: 50%;
+  }
+
+  .all_products {
+    height: 100%;
+    text-align: center;
+    padding: 20px 0px;
+  }
+
+  .all_products > .products {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .grid_carousel .grid_carousel_items {
+    grid-auto-columns: 100%;
+  }
+
+  .medical {
+    display: block;
+    height: auto;
+  }
+
+  .services {
+    padding: 10px;
+  }
+
+  .services > .inner {
+    width: 100%;
+    display: block;
+    text-align: center;
+  }
+
+  .services > .inner > .left {
+    flex-direction: column;
+  }
+}
+
+@media all and (min-width: 355px) and (max-width: 760px) {
+  .carousel .carousel_items {
+    grid-auto-columns: 100%;
+  }
+}
+
+@media all and (min-width: 864px) and (max-width: 1284px) {
+  .right > img {
+    width: 100%;
+  }
+}
