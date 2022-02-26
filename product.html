@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./proStyles/product.css" />
+ 
+    <title>Document</title>
+</head>
+<body>
+   <div id="container">
+    <div id="filter">
+        <h5>Filter By</h5>
+        <hr>
+        <div class="multipleSelection">
+            <div class="selectBox" 
+                onclick="showproduct()">
+                <div id="cat">
+                    <p>CATEGORY</p>
+                    <img id="downarrow" src="https://www.citypng.com/public/uploads/preview/dark-gray-down-head-arrow-11581594305zjibgsalxd.png"/>
+                </div>
+                
+             </div>
+         <div id="productlist">
+            <label for="first">
+                <input type="checkbox" onclick="myfunction('regimen')" id="search"> 
+                
+                Regimens(24)
+            </label>
+           
+              
+            <label for="second">
+                <input type="checkbox" onclick="myfunction('Serum')" id="search"> 
+                Face Serums(15)
+            </label>
+            <label for="third">
+                <input type="checkbox" onclick="myfunction('eye')" id="search"> 
+                Eyes(14)
+            </label>
+            <label for="fourth">
+                <input type="checkbox" onclick="myfunction('mask')" id="search"> 
+                Face Masks(5)
+            </label>
+            <label for="five">
+                <input type="checkbox" onclick="myfunction('body')" id="search"> 
+                Hand & Body(5)
+            </label>
+              
+            <label for="six">
+                <input type="checkbox" onclick="myfunction('sun')" id="search"> 
+                Sun Protection(9)
+            </label>
+            <label for="seven">
+                <input type="checkbox" onclick="myfunction('skin')" id="search"> 
+                Pro Skincare Tools(11)
+            </label>
+            <label for="eigth">
+                <input type="checkbox" onclick="myfunction('accessories')" id="search"> 
+                Accessories(9)
+            </label>
+            <label for="nine">
+                <input type="checkbox" onclick="myfunction('special')" id="search"> 
+                Special Offers(18)
+            </label>
+         </div>
+        </div>
+            <hr>
+            <div class="multipleSelection">
+                <div class="selectBox" 
+                    onclick="skinconcern()">
+                    <div id="cat">
+                        <p>SKIN CONCERN</p>
+                        <img id="downarrow" src="https://www.citypng.com/public/uploads/preview/dark-gray-down-head-arrow-11581594305zjibgsalxd.png"/>
+                    </div>
+                 </div>
+    
+            <div id="skinlist">
+                <label for="first">
+                    <input type="checkbox" onclick="myfunction('fine')" id="search"> 
+                    Fine Lines & Wrinkles (24)
+                    </label>
+                
+                <label for="second">
+                    <input type="checkbox" onclick="myfunction('Lifting & Firming')" id="search"> 
+                    Lifting & Firming (20)
+                </label>
+
+                <label for="third">
+                    <input type="checkbox" onclick="myfunction('dull')" id="search"> 
+                    Dull & Tired Skin (8)
+                </label>
+
+                <label for="fourth">
+                    <input type="checkbox" onclick="myfunction('acne')" id="search"> 
+                    Acne & Breakouts (13)
+                </label>
+
+                <label for="five">
+                    <input type="checkbox" onclick="myfunction('uneven')" id="search"> 
+                Uneven Tone & Dark Marks (12)
+                </label>
+                
+                <label for="six">
+                    <input type="checkbox" onclick="myfunction('sensitivity')" id="search"> 
+                    Sensitivity & Visible Redness (8)
+                </label>
+
+                <label for="seven">
+                    <input type="checkbox" onclick="myfunction('pores')" id="search"> 
+                    Pores & Blackheads (11)
+                </label>
+
+                <label for="eigth">
+                    <input type="checkbox" onclick="myfunction('dry')" id="search"> 
+                Dry Skin (7)
+                </label>
+        
+            
+            </div>
+        </div>
+        <hr>
+        
+        <div class="multipleSelection">
+            <div class="selectBox" 
+                onclick="applicationarea()">
+                <div id="cat">
+                    <p>APPLICATION AREA</p>
+                    <img id="downarrow" src="https://www.citypng.com/public/uploads/preview/dark-gray-down-head-arrow-11581594305zjibgsalxd.png"/>
+                </div>
+                <!-- <div class="overSelect"></div> -->
+            </div>
+  
+          <div id="applicationarea">
+            <label for="first">
+                <input type="checkbox" onclick="myfunction('face')" id="search"> 
+                  Face (17)
+            </label>
+             <label for="second">
+                <input type="checkbox" onclick="myfunction('eye')" id="search"> 
+                Eyes (2)
+            </label>
+             <label for="third">
+                <input type="checkbox" onclick="myfunction('lip')" id="search"> 
+                Lips (1)
+            </label>
+            </div>
+        </div>
+            <hr>
+            <div class="multipleSelection">
+                <div class="selectBox" 
+                    onclick="productline()">
+                    <div id="cat">
+                        <p>PRODUCT LINE</p>
+                        <img id="downarrow" src="https://www.citypng.com/public/uploads/preview/dark-gray-down-head-arrow-11581594305zjibgsalxd.png"/>
+                        
+                    </div>
+                   
+                </div>
+      
+             <div id="productlinelist">
+                <label for="first">
+                    <input type="checkbox" onclick="myfunction('redefine')" id="search"> 
+                    Redefine (20)
+                     </label>
+                  
+                <label for="second">
+                    <input type="checkbox" onclick="myfunction('Enhancements')" id="search"> 
+
+                    Enhancements (2)
+                </label>
+    
+     </div>
+    </div>
+ </div>
+  
+ <div id="productarray"></div>
+</div>
+</body>
+</html>
+<script src="./data/products.js"></script>
+<script src="./proscript/product.js"></script>
