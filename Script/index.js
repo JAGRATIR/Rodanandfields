@@ -30,14 +30,39 @@ bestArr.map(function(elem){
 
 
 //Add to cart
-var CartList= JSON.parse(localStorage.getItem("CartList"))||[];
+var cartList= JSON.parse(localStorage.getItem("cartList"))||[];
 
 function addToCart(elem) {
-  CartList.push(elem);
-  localStorage.setItem("CartList",JSON.stringify(CartList));
-  display_data(CartList);
-  show_total();
+  if(cartList.length==0){
+    cartList.push(elem);
+    localStorage.setItem("cartList",JSON.stringify(cartList));
+    display_data(cartList);
+    show_total();
+  }else{
+    var check = check_already_existing(elem);
+    if(check==0){
+      cartList.push(elem);
+      localStorage.setItem("cartList",JSON.stringify(cartList));
+      display_data(cartList);
+      show_total();
+    }
+  } 
 }
+
+
+function check_already_existing(elem){
+  for(var i=0;i<cartList.length;i++){
+    if(cartList[i].name==elem.name){
+      cartList[i].qty++;
+      localStorage.setItem("cartList",JSON.stringify(cartList));
+      display_data(cartList);
+      show_total();
+      return 1;
+    }
+  }
+  return 0;
+}
+
 
 // scroll to top button 
 var mybutton = document.querySelector(".scroll-up-btn");
@@ -59,6 +84,21 @@ function topFunction() {
     top: 0,
     behavior: "smooth"
   })
+}
+
+
+//redirect page to all products
+var shop_btn = document.querySelector(".left>.inner>button");
+shop_btn.addEventListener("click",redirect_to_allProducts);
+
+var shop_all_products=document.querySelector(".all_products>button");
+shop_all_products.addEventListener("click",redirect_to_allProducts);
+
+var start_shop_btn = document.querySelector(".cart_mid>button");
+start_shop_btn.addEventListener("click",redirect_to_allProducts);
+
+function redirect_to_allProducts(){
+  window.location.href="../product.html";
 }
 
 // sticky navbar 
@@ -135,7 +175,6 @@ function trigger_right1(){
   if(container1.scrollLeft<100){
     left_button1.style.display="block";
   }
-console.log(container1.scrollLeft)
 
 }
 
@@ -181,7 +220,7 @@ function closeSearch(){
   document.body.classList.remove("no_scroll");
 }
 
-
+//cart slider
 var close_cart_btn= document.querySelector(".cart_area > .cart_box > .cart_nav>p");
 close_cart_btn.addEventListener("click",close_cart);
 
