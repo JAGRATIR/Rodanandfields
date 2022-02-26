@@ -90,9 +90,9 @@ const populateProducts = () => {
     disc.innerText=elem.disc;
     disc.id="elemdisc"
 
-    var qty=document.createElement("p")
-    qty.innerText=elem.qty;
-    qty.id="elemqty"
+    // var qty=document.createElement("p")
+    // qty.innerText=elem.qty;
+    // qty.id="elemqty"
 
   //star section
     var star=document.createElement("p")
@@ -114,7 +114,7 @@ const populateProducts = () => {
 
      rewDiv.append(star,review)
      rewDiv.id="rewDiv"
-    childDiv.append(title,name,disc,price,qty)
+    childDiv.append(title,name,disc,price)
     childDiv.id="childdiv"
     
    var button=document.createElement("button")
