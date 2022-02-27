@@ -19,10 +19,11 @@ This is a team project, built by us in the Construct Week - Unit 2 at Masai Scho
 
 - `Home Page`: Nav Bar with drop downs, sliding banners & slider for Products.
 - `Sign-In`: User authentication to check whether user email and password match with details existing in the database.
-- `Product Category Page`: Skin products created dynamically with filter by category, name and price.
-- `Cart`: User can see or remove products added in the cart and apply discount coupons.
-- `Checkout Page`: Users can add the delivery address.
-- `Payment Page`: Users can add their payment details.
+- `Search`: User can search for any of the products present in the website.
+- `Product Category Page and Regimen page`: Skin products created dynamically with filter by category, name and price.
+- `Cart`: User can see or remove products added in the cart.
+- `Checkout Page`: Users can increase, decrease the quantity of the product and can apply discount coupon.
+- `Payment Page`: Users can add their payment details, address and can create their account.
 - `Order Successful`: cart gets empty automatically in local storage, once the user lands on this page.
 - `Additional Features`: Kept the branding, fonts, colors and favicon and titles consistent throughtout the whole site to give a feel like the original site.
 
