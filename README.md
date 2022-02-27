@@ -6,6 +6,8 @@ Rodan & Fields, LLC, known as Rodan + Fields or R+F, is an American manufacturer
 
 This is a team project, built by us in the Construct Week - Unit 2 at Masai School.
 
+- Here is the link of our website live on netlify: https://rodanfields.netlify.app/
+
 ## Our Team Members ❤️
 
 - **[Akshit Rana](https://github.com/Akshit3010)**
