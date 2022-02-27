@@ -89,7 +89,21 @@ function topFunction() {
 
 //redirect page to all products
 var shop_btn = document.querySelector(".left>.inner>button");
-shop_btn.addEventListener("click",redirect_to_allProducts);
+shop_btn.addEventListener("click",function(){
+  window.location.href="../regimens/regimens 1.html";
+});
+
+//redirect to regimen page on clicking the home image
+document.querySelector(".container>.right>img").addEventListener("click",function(){
+  window.location.href="../regimens/regimens 1.html";
+});
+
+
+//for mobile nav links
+var all_divs=document.querySelectorAll(".nav_top~div");
+for(var j=0;j<all_divs.length;j++){
+  all_divs[j].addEventListener("click",redirect_to_allProducts);
+}
 
 var shop_all_products=document.querySelector(".all_products>button");
 shop_all_products.addEventListener("click",redirect_to_allProducts);
