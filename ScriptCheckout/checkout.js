@@ -1,4 +1,4 @@
-//Left Portion:contact and payment details
+//-----------------Left Portion:contact and payment details-------------
 var input1=document.querySelector("#pwwd");
 var length=document.querySelector("#length");
 var capital=document.querySelector("#capital");
@@ -6,7 +6,8 @@ var lower=document.querySelector("#lower");
 var number=document.querySelector("#number");
 var specialchar=document.querySelector("#specialchar");
 
-//Toggle Password
+//---------------------Contact Portion-----------------
+// --------------------Toggle Password------------------
 var togglepwd=document.querySelector("#togglepwd");
 var pwd=document.querySelector("#pwwd");
 
@@ -44,7 +45,6 @@ function myScript(event){
     
     //upperCase validation
     var upperCase = /[A-Z]/g;
-    console.log(input1.value.match(upperCase));
 
     if(input1.value.match(upperCase))
         { 
@@ -86,7 +86,7 @@ function myScript(event){
         }
     
     //special character validation
-    var special = /[!$%]/g;
+    var special = /[~`@!#$%^&_:]/g;
 
     if(input1.value.match(special))
         {
@@ -112,7 +112,33 @@ function myScript(event){
         }
 }
 
-//Right Portion:Order Summary
+// -----------------------Sign-in-------------------------
+
+//--------------------Visibilty of next block(shipping and payment) only when "save and continue" button is clicked--------
+var arr =  JSON.parse(localStorage.getItem('signindata')) || [];
+console.log(typeof (arr));
+var form1= document.querySelector("#contact");
+form1.addEventListener("submit",check_user);
+
+
+
+function check_user(event){
+    event.preventDefault();
+    var user = form1.mail.value;
+    var pwd = form1.pwwd.value;
+
+    var obj={
+        user:user,
+        pwd:pwd,
+    };
+    arr.push(obj);
+    document.querySelector("#lower_div > div:first-child").style.height="1200px";
+    localStorage.setItem(('signindata'),JSON.stringify(arr));  
+    console.log(arr);
+}
+
+
+//-----------------Right Portion:Order Summary------------
 var cartList=JSON.parse(localStorage.getItem("cartList"));
 
 display(cartList);
@@ -167,7 +193,7 @@ function displayTotal()
     document.querySelector("#subtotal>p:last-child").value=total;
 }
 
-//Final Total
+//--------------------Final Total:Added Shipping Charges when one of radio button clicked from "select shipping" block.---------- 
 
 function myscript()
 {
@@ -231,13 +257,4 @@ function myscript()
 
 
 
-var form1= document.querySelector("#contact");
-form1.addEventListener("submit",check_user);
 
-function check_user(e){
-    e.preventDefault();
-    var user = form1.mail.value;
-    var pwd = form1.pwwd.value;
-    
-    document.querySelector("#lower_div > div:first-child").style.height="1200px";
-}
